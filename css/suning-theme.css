@@ -1,0 +1,195 @@
+.common_btn {
+	padding: 5px 25px;
+	border-radius: 4px;
+	background-color: #6666FF;
+	color: #fff;
+	font-size: 15px;
+}
+
+.form-group label {
+	font-weight: normal;
+	color: #4E5D73;
+}
+
+
+
+
+
+
+
+
+
+/*checkbox*/
+
+.checkbox {
+	position: relative;
+	display: inline-block;
+}
+
+.checkbox label {
+	position: relative;
+}
+
+.checkbox input[type='checkbox'] {
+	display: block;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	left: -1000px;
+	position: absolute;
+}
+
+.checkbox input[type='checkbox']+span {
+	position: relative;
+	margin-right: 5px;
+}
+
+.checkbox input[type='checkbox']+span>i {
+	font-size: 18px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+
+.checkbox input[type='checkbox']+span>.fa-square-o {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	font-size: 19px;
+	color: #C0C0C0;
+}
+
+.checkbox input[type='checkbox']+span>.fa-check-square {
+	color: #8093FF;
+}
+
+.checkbox input[type='checkbox']+span>.fa-square-o,
+.checkbox input[type='checkbox']:checked+span>.fa-check-square {
+	opacity: 1;
+	visibility: visible;
+}
+
+.checkbox input[type='checkbox']+span>.fa-check-square,
+.checkbox input[type='checkbox']:checked+span>.fa-square-o {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/*select*/
+
+.select {
+	padding-top: 2px;
+	display: inline-block;
+}
+
+.select select {
+	height: 32px;
+	border: 1px solid #CAD3DF;
+	border-radius: 4px;
+	width: 100%;
+}
+
+
+/*table top*/
+
+.table_top_area {
+
+	padding: 0 30px;
+}
+
+.table_top_area .info {
+	float: left;
+	color: #35435D;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.table_top_area .info span {
+	color: #6666FF;
+	margin: 0 3px;
+}
+
+.table_top_area .btn_box {
+	float: right;
+}
+
+.table_top_area .btn_box button {
+	padding: 5px 12px;
+	color: #6666FF;
+	background-color: transparent;
+	border: 1px solid #C5D0DE;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.table_top_area .btn_box button i {
+	font-size: 18px;
+	margin-right: 3px;
+}
+
+
+
+/*table*/
+
+.suning_table {
+	width: 100%;
+	border: 1px solid #F2F2F2;
+}
+
+.suning_table thead th {
+	height: 49px;
+	background-color: #F1F5FE;
+	color: #4E5C6E;
+	border-right: 1px solid #F2F2F2;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.suning_table thead th:last-child {
+	border-right: none;
+}
+
+.suning_table tbody td {
+	border-right: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	text-align: center;
+	vertical-align: middle;
+	height: 49px;
+	font-size: 14px;
+}
+
+.suning_table tbody tr:last-child{
+	border-bottom: none;
+}
+
+.suning_table tbody tr td:last-child{
+	border-right: none;
+}
+
+.suning_table tbody .btn_setting{
+	font-size: 18px;
+	color: #6666FF;
+	cursor: pointer;
+}
+
+.suning_table tbody tr:hover td{
+	background-color: #F8FAFB;
+}
+
+
+/*table bottom*/
+.table_bottom_area{
+	margin-top: 20px;
+}

@@ -1,0 +1,62 @@
+.test {
+	display: flex;
+}
+
+.main_content {
+	background-color: #fff;
+}
+
+.shopManage_page {}
+
+.shopManage_page .part1 {
+	border: 1px solid #C5D0DE;
+	height: 108px;
+	position: relative;
+}
+
+.shopManage_page .part1 .form-inline {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.shopManage_page .part1 .form-group {
+	margin-bottom: 15px !important;
+}
+
+.shopManage_page .part1 .cut_line {
+	height: 100%;
+	position: absolute;
+	width: 1px;
+	background-color: #C5D0DE;
+	left: 85%;
+	top: 0;
+}
+
+.shopManage_page .part2 {
+	padding: 10px;
+}
+
+.paginationjs .paginationjs-pages li.active>a {
+	background-color: #8093FF;
+}
+
+.paginationjs .paginationjs-pages li>a {
+	color: #A5A5A5;
+}
+
+.paginationjs .paginationjs-pages li:first-child,
+.paginationjs .paginationjs-pages li:last-child>a {
+	padding: 0 10px;
+}
+
+.paginationjs .paginationjs-go-button>input[type=button] {
+	color: #A5A5A5;
+}
+
+.paginationjs .paginationjs-pages li{
+	border: 1px solid #ddd;
+}
+
+.paginationjs .paginationjs-pages li:last-child{
+	border-right: 1px solid #ddd;
+}
