@@ -1,3 +1,5 @@
+/*button*/
+
 .common_btn {
 	padding: 5px 25px;
 	border-radius: 4px;
@@ -6,10 +8,32 @@
 	font-size: 15px;
 }
 
+.common_btn.commit {
+	width: 160px;
+	height: 40px;
+	color: #fff;
+	background-color: #8093FF;
+	border-radius: 4px;
+}
+
+.common_btn.cancel {
+	width: 160px;
+	height: 40px;
+	color: #8093FF;
+	border-radius: 4px;
+	border: 1px solid #8093FF;
+	background-color: transparent;
+}
+
+
+
+
 .form-group label {
 	font-weight: normal;
 	color: #4E5D73;
 }
+
+
 
 
 
@@ -85,6 +109,8 @@
 
 
 
+
+
 /*select*/
 
 .select {
@@ -98,6 +124,8 @@
 	border-radius: 4px;
 	width: 100%;
 }
+
+
 
 
 /*table top*/
@@ -139,6 +167,8 @@
 
 
 
+
+
 /*table*/
 
 .suning_table {
@@ -170,26 +200,29 @@
 	font-size: 14px;
 }
 
-.suning_table tbody tr:last-child{
+.suning_table tbody tr:last-child {
 	border-bottom: none;
 }
 
-.suning_table tbody tr td:last-child{
+.suning_table tbody tr td:last-child {
 	border-right: none;
 }
 
-.suning_table tbody .btn_setting{
+.suning_table tbody .btn_setting {
 	font-size: 18px;
 	color: #6666FF;
 	cursor: pointer;
 }
 
-.suning_table tbody tr:hover td{
+.suning_table tbody tr:hover td {
 	background-color: #F8FAFB;
 }
 
 
+
+
 /*table bottom*/
-.table_bottom_area{
+
+.table_bottom_area {
 	margin-top: 20px;
 }

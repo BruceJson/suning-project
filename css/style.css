@@ -53,10 +53,72 @@
 	color: #A5A5A5;
 }
 
-.paginationjs .paginationjs-pages li{
+.paginationjs .paginationjs-pages li {
 	border: 1px solid #ddd;
 }
 
-.paginationjs .paginationjs-pages li:last-child{
+.paginationjs .paginationjs-pages li:last-child {
 	border-right: 1px solid #ddd;
+}
+
+.suning_table1 {
+	border: 1px solid #E4E4E4;
+	color: #909097;
+	width: 1140px;
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+.suning_table1 td {
+	height: 44px;
+	text-align: center;
+	border-right: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.suning_table1 tr:nth-last-child(1) td {
+	border-bottom: none;
+}
+
+.suning_table1 tr td:nth-last-child(1) {
+	border-right: none;
+}
+
+.suning_table1 tr td:nth-child(4n - 3),
+.suning_table1 tr td:nth-child(4n - 1) {
+	background-color: #F7F7F7;
+	width: 153px;
+}
+
+.suning_table1 td input {
+	width: 338px;
+	display: inline-block;
+}
+
+.suning_table1 td .address_box {
+	position: relative;
+	width: 338px;
+	display: inline-block;
+}
+
+.suning_table1 td .address_box:before {
+	display: block;
+	content: '';
+	width: 1px;
+	height: 18px;
+	background-color: #CAD3DF;
+	position: absolute;
+	left: 30px;
+	top: 8px;
+}
+
+.suning_table1 td .address_box i {
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	font-size: 16px;
+}
+
+.suning_table1 td .address_box input{
+	padding-left: 35px;
 }
