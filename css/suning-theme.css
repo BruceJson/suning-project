@@ -43,6 +43,7 @@
 
 
 
+
 /*checkbox*/
 
 .checkbox {
@@ -103,6 +104,67 @@
 }
 
 
+/*radio*/
+
+.radio {
+	position: relative;
+	display: inline-block;
+}
+
+.radio label {
+	position: relative;
+}
+
+.radio input[type='radio'] {
+	display: block;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	left: -1000px;
+	position: absolute;
+}
+
+.radio input[type='radio']+span {
+	position: relative;
+	margin-right: 5px;
+}
+
+.radio input[type='radio']+span>i {
+	font-size: 18px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+
+.radio input[type='radio']+span>.fa-square-o {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	font-size: 19px;
+	color: #C0C0C0;
+}
+
+.radio input[type='radio']+span>.fa-check-square {
+	color: #8093FF;
+}
+
+.radio input[type='radio']+span>.fa-square-o,
+.radio input[type='radio']:checked+span>.fa-check-square {
+	opacity: 1;
+	visibility: visible;
+}
+
+.radio input[type='radio']+span>.fa-check-square,
+.radio input[type='radio']:checked+span>.fa-square-o {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
 
 
 
@@ -124,6 +186,7 @@
 	border-radius: 4px;
 	width: 100%;
 }
+
 
 
 
@@ -164,6 +227,7 @@
 	font-size: 18px;
 	margin-right: 3px;
 }
+
 
 
 
@@ -217,6 +281,7 @@
 .suning_table tbody tr:hover td {
 	background-color: #F8FAFB;
 }
+
 
 
 

@@ -96,9 +96,9 @@
 				<div class='main_content shopManage_page'>
 					<form class='part1'>
 						<!-- 左边 -->
-						<div class="form-inline fl" style='width: 85%;'>
-							<div class="form-group" style='width: 33%;'>
-								<label for="inputEmail3" class="control-label margin_right_20" style='width: 35%;text-align: right;'>是否闭店：</label>
+						<div class="form-inline fl" style='width: 50%;'>
+							<div class="form-group" style='width: 100%;'>
+								<label for="inputEmail3" class="control-label margin_right_20" style='width: 18%;text-align: right;'>活动类型：</label>
 								<div class="radio margin_right_20">
 									<label>
 										<input type="radio">
@@ -106,7 +106,7 @@
 											<i class='fa fa-check-square'></i>
 											<i class='fa fa-square-o'></i>
 										</span>
-										<span>全选</span>
+										<span>全部</span>
 									</label>
 								</div>
 								<div class="radio margin_right_20">
@@ -116,7 +116,7 @@
 											<i class='fa fa-check-square'></i>
 											<i class='fa fa-square-o'></i>
 										</span>
-										<span>是</span>
+										<span>新店开业</span>
 									</label>
 								</div>
 								<div class="radio">
@@ -126,12 +126,12 @@
 											<i class='fa fa-check-square'></i>
 											<i class='fa fa-square-o'></i>
 										</span>
-										<span>否</span>
+										<span>重装开业</span>
 									</label>
 								</div>
 							</div>
-							<div class="form-group" style='width: 40%;'>
-								<label for="inputPassword3" class="control-label margin_right_20">地区选择：</label>
+							<div class="form-group" style='width: 100%;'>
+								<label for="inputPassword3" class="control-label margin_right_20" style='width: 18%;text-align: right;'>地区选择：</label>
 								<!-- 下拉框 -->
 								<div class='select' style='margin-right: 12px;width: 34%;'>
 									<select>
@@ -152,64 +152,19 @@
 									</select>
 								</div>
 							</div>
-							<div class="form-group" style='width: 25%;'>
-								<label for="inputPassword3" class="control-label margin_right_20">门店编码：</label>
-								<input type="password" class="form-control" id="inputPassword3" placeholder="门店编码" style='width: 60%'>
-							</div>
-							<div class="form-group" style='width: 33%;'>
-								<label for="inputEmail3" class="control-label margin_right_20" style='width: 35%;text-align: right;'>位置是否准确：</label>
-								<div class="radio margin_right_20">
-									<label>
-										<input type="radio">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>全选</span>
-									</label>
-								</div>
-								<div class="radio margin_right_20">
-									<label>
-										<input type="radio">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>是</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>否</span>
-									</label>
-								</div>
-							</div>
-							<div class="form-group" style='width: 40%;'>
-								<label for="inputPassword3" class="control-label margin_right_20">门店名称：</label>
-								<input type="password" class="form-control" id="inputPassword3" placeholder="门店名称" style='width: 72%'>
-							</div>
 						</div>
-						<!-- 分割线 -->
-						<div class='cut_line'></div>
 						<!-- 右边 -->
-						<div class='fl submit_box align_center' style='width: 15%;height: 100%'>
-							<span class='inline_block width_0 height_full vertical_middle'></span>
-							<button class='common_btn vertical_middle'>搜索</button>
+						<div class='fl form-inline submit_box align_center' style='width: 50%;height: 100%'>
+							<div class='inline_block' style='width: 97%;'>
+								<input class='form-control vertical_middle margin_right_15' style='display: inline-block;width: 60%' type="text" name="" placeholder="请输入活动名称">
+								<button class='common_btn vertical_middle'>搜索</button>
+							</div>
 						</div>
 					</form>
 					<div class='part2'>
 						<div class='table_top_area clx'>
 							<p class='info'>查询结果：共<span>400</span>条记录</p>
 							<div class='btn_box'>
-								<button>
-									<i class='fa fa-upload'></i>
-									<span>批量上传</span>
-								</button>
 								<button>
 									<i class='fa fa-download'></i>
 									<span>导出记录</span>
