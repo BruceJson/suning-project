@@ -1,15 +1,15 @@
 var data = [
-    { name: '海门', value: 500},
-    { name: '鄂尔多斯', value: 500 },
-    { name: '招远', value: 500 },
-    { name: '舟山', value: 500 },
-    { name: '齐齐哈尔', value: 500 },
-    { name: '盐城', value: 500 },
-    { name: '赤峰', value: 500 },
-    { name: '青岛', value: 500 },
-    { name: '乳山', value: 500 },
-    { name: '金昌', value: 500 },
-    { name: '泉州', value: 500 }
+    { name: '海门', value: 200 },
+    { name: '鄂尔多斯', value: 200 },
+    { name: '招远', value: 200 },
+    { name: '舟山', value: 200 },
+    { name: '齐齐哈尔', value: 200 },
+    { name: '盐城', value: 200 },
+    { name: '赤峰', value: 200 },
+    { name: '青岛', value: 200 },
+    { name: '乳山', value: 200 },
+    { name: '金昌', value: 200 },
+    { name: '泉州', value: 200 }
 ];
 var geoCoordMap = {
     '海门': [121.15, 31.89],
@@ -251,31 +251,32 @@ option = {
         }
     },
     series: [{
-            name: 'pm2.5',
             type: 'scatter',
             coordinateSystem: 'geo',
-            data: convertData(data),
+            data: convertData(data.slice(6)),
             symbolSize: function(val) {
                 return val[2] / 10;
             },
             label: {
                 normal: {
                     formatter: '{b}',
-                    position: 'right',
-                    show: false
+                    position: 'top',
+                    show: true
                 },
                 emphasis: {
                     show: true
-                }
+                },
             },
             itemStyle: {
                 normal: {
                     color: '#ddb926'
                 }
-            }
+            },
+
+            symbol: 'image://../img/5.png',
+            symbolSize: [10, 15]
         },
         {
-            name: 'Top 5',
             type: 'effectScatter',
             coordinateSystem: 'geo',
             data: convertData(data.sort(function(a, b) {
@@ -292,13 +293,13 @@ option = {
             label: {
                 normal: {
                     formatter: '{b}',
-                    position: 'right',
+                    position: 'top',
                     show: true
                 }
             },
             itemStyle: {
                 normal: {
-                    color: '#f4e925',
+                    color: '#FB6687',
                     shadowBlur: 10,
                     shadowColor: '#333'
                 }
