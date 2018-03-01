@@ -44,6 +44,8 @@
 
 
 
+
+
 /*checkbox*/
 
 .checkbox {
@@ -102,6 +104,8 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+
 
 
 /*radio*/
@@ -173,6 +177,8 @@
 
 
 
+
+
 /*select*/
 
 .select {
@@ -186,6 +192,8 @@
 	border-radius: 4px;
 	width: 100%;
 }
+
+
 
 
 
@@ -227,6 +235,8 @@
 	font-size: 18px;
 	margin-right: 3px;
 }
+
+
 
 
 
@@ -286,8 +296,23 @@
 
 
 
+
+
 /*table bottom*/
 
 .table_bottom_area {
 	margin-top: 20px;
+}
+
+
+
+/*subtitle*/
+
+.suning_subtitle {
+	height: 40px;
+	border: 2px solid #E2E8EF;
+	line-height: 36px;
+	color: #515D7D;
+	padding-left: 49px;
+	font-size: 15px;
 }
