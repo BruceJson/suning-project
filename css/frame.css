@@ -173,6 +173,7 @@ header .header_title {
 }
 
 
+
 /*.body_content*/
 
 .body_content {
@@ -183,6 +184,7 @@ header .header_title {
 .body_content_inner {
 	padding: 15px;
 }
+
 
 
 /*breadcrumbs*/
@@ -206,6 +208,7 @@ header .header_title {
 	color: #a9b0b6;
 }
 
-.bread_item:nth-last-child(1) .dot{
+.bread_item:nth-last-child(1) .dot {
 	display: none;
 }
+

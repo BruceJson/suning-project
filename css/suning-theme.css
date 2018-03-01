@@ -25,6 +25,13 @@
 	background-color: transparent;
 }
 
+.common_btn.cancel.small{
+	width: 90px;
+	height: 30px;
+	padding: 5px;
+	line-height: 1;
+}
+
 
 
 
@@ -55,6 +62,7 @@
 
 .checkbox label {
 	position: relative;
+	padding-left: 0;
 }
 
 .checkbox input[type='checkbox'] {
@@ -117,6 +125,7 @@
 
 .radio label {
 	position: relative;
+	padding-left: 0;
 }
 
 .radio input[type='radio'] {
@@ -132,6 +141,8 @@
 .radio input[type='radio']+span {
 	position: relative;
 	margin-right: 5px;
+	float: left;
+	line-height: 1;
 }
 
 .radio input[type='radio']+span>i {
@@ -143,30 +154,41 @@
 	-o-transition: all linear 0.3s;
 }
 
-.radio input[type='radio']+span>.fa-square-o {
+.radio input[type='radio']+span>.icon-gouxuan {
 	position: absolute;
 	left: 0;
-	top: 1px;
+	top: 0px;
 	font-size: 19px;
 	color: #C0C0C0;
 }
 
-.radio input[type='radio']+span>.fa-check-square {
+.radio input[type='radio']+span>.icon-gou {
 	color: #8093FF;
+	font-size: 19px;
+	margin-top: 2px;
 }
 
-.radio input[type='radio']+span>.fa-square-o,
-.radio input[type='radio']:checked+span>.fa-check-square {
+.radio input[type='radio']+span>.icon-gouxuan,
+.radio input[type='radio']:checked+span>.icon-gou {
 	opacity: 1;
 	visibility: visible;
 }
 
-.radio input[type='radio']+span>.fa-check-square,
-.radio input[type='radio']:checked+span>.fa-square-o {
+.radio input[type='radio']+span>.icon-gou,
+.radio input[type='radio']:checked+span>.icon-gouxuan {
 	opacity: 0;
 	visibility: hidden;
 }
 
+
+
+/*form-group*/
+
+.control-label .require_dot {
+	color: #FF5D64;
+	font-size: 18px;
+	vertical-align: top;
+}
 
 
 
