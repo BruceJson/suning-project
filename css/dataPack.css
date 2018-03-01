@@ -1,0 +1,101 @@
+.flex{
+  display: flex;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+.flex-content-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+
+.flex-right{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.width-400{
+  width:200px;
+}
+
+.width-73-percent{
+      width: 73% !important;
+}
+
+.nav-container{
+
+  width: 860px;
+  margin: 30px auto;
+}
+
+.float-right{
+  float: right !important;
+}
+
+.nav-tabs > li{
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.nav-tabs > li > a,.nav-tabs > li > a:hover{
+  background-color: #8798C6;
+  border: none;
+  color:#fff;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  background-color: #6666FF;
+  border:none;
+  color:#fff;
+}
+
+.border-no-top{
+  border:1px solid #ddd;
+  border-top:none;
+}
+.background-color-default{
+  background-color: #F1F5FE !important;
+}
+.td-a a,.color-blue{
+  color:#6666FF;
+}
+
+.btn-next{
+  width:100%;
+  text-align:center;
+}
+.width-600{
+  width:400px !important;
+}
+
+.form-content-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin_left_250{
+  margin-left:150px;
+}
+
+.color-ddd{
+  color:#b5b2b2;
+}
+
+.sql-container{
+  width:600px;
+  margin: 20px auto;
+}
+
+.btn-blue{
+    background-color: #6666FF;
+    color:#fff;
+    padding: 5px 25px;
+    border-radius: 4px;
+    font-size: 12px;
+}
