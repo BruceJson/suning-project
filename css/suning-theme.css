@@ -68,6 +68,8 @@
 
 
 
+
+
 /*checkbox*/
 
 .checkbox {
@@ -127,6 +129,8 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+
 
 
 
@@ -201,6 +205,8 @@
 
 
 
+
+
 /*form-group*/
 
 .control-label .require_dot {
@@ -208,6 +214,8 @@
 	font-size: 18px;
 	vertical-align: top;
 }
+
+
 
 
 
@@ -236,6 +244,8 @@
 	border-radius: 4px;
 	width: 100%;
 }
+
+
 
 
 
@@ -281,6 +291,8 @@
 	font-size: 18px;
 	margin-right: 3px;
 }
+
+
 
 
 
@@ -348,11 +360,15 @@
 
 
 
+
+
 /*table bottom*/
 
 .table_bottom_area {
 	margin-top: 20px;
 }
+
+
 
 
 
@@ -371,6 +387,8 @@
 
 
 
+
+
 /*tooltip*/
 
 .tooltip.bottom .tooltip-arrow {
@@ -381,4 +399,59 @@
 	background-color: #8093FF;
 	color: #fff;
 	padding: 9px 25px;
+}
+
+
+
+/*下拉框*/
+
+.dropdown-menu {
+	width: 100%;
+}
+
+.dropdown-menu.datetimepicker {
+	width: auto;
+}
+
+.caret {
+	border-top: 6px dashed #8093FF;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.btn .caret {
+	margin-left: 15px;
+}
+
+
+/*modal*/
+.modal .modal-dialog {
+/*	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-65%) !important;
+	-webkit-transform: translateX(-50%) translateY(-65%) !important;
+	-ms-transform: translateX(-50%) translateY(-65%) !important;
+	-moz-transform: translateX(-50%) translateY(-65%) !important;
+	-o-transform: translateX(-50%) translateY(-65%) !important;*/
+}
+
+.modal-header{
+	background-color: #8093FF;
+	color: #fff;
+}
+
+.modal-header .close{
+	color: #fff;
+	opacity: 1;
+}
+
+.modal-body{
+	padding: 32px 42px;
+	padding-bottom: 0;
+}
+
+.modal-footer{
+	padding: 25px;
+	border-top: none;
 }
