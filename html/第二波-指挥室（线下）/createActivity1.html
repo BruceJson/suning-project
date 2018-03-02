@@ -9,6 +9,10 @@
 		<!-- font -->
 		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+		<!-- timeRangePicker -->
+		<link rel="stylesheet" type="text/css" href="../../js/daterangepicker/daterangepicker.css">
+		<!-- datetimepicker -->
+		<link rel="stylesheet" type="text/css" href="../../js/datetimepicker/css/bootstrap-datetimepicker.min.css">
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="../../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
@@ -125,23 +129,243 @@
 					</p>
 				</div>
 				<div class='main_content' style='padding: 60px 0;'>
-					<!-- 内容 -->
-					<div class='form-horizontal'>
-						<div class="form-group">
-							<label class="col-sm-4 control-label">
-								<span class='require_dot'>*</span>活动名称:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" placeholder="请输入活动名称" required>
+					<div class='make_avtivity_form'>
+						<!-- 内容 -->
+						<div class='form-horizontal'>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动名称:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="请输入活动名称" required>
+								</div>
 							</div>
-						</div>
-						<div class='form-group align_center'>
-							<button class='common_btn submit margin_right_25'>提交并创建事件</button>
-							<button class='common_btn cancel margin_right_25'>取消</button>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动类型:</label>
+								<div class="col-sm-4">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle width_full" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											请选择活动类型
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li>
+												<a>Action</a>
+											</li>
+											<li>
+												<a>Another action</a>
+											</li>
+											<li>
+												<a>Something else here</a>
+											</li>
+											<li>
+												<a>Separated link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动目的:</label>
+								<div class="col-sm-4">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle width_full" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											请选择活动目的
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li>
+												<a>Action</a>
+											</li>
+											<li>
+												<a>Another action</a>
+											</li>
+											<li>
+												<a>Something else here</a>
+											</li>
+											<li>
+												<a>Separated link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动日期:</label>
+								<div class="col-sm-10">
+									<input id='timeRange' type="text" class="form-control" placeholder="请选择活动日期" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动介绍:</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" style='height: 132px;' placeholder="不超过100字"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>营销日期:</label>
+								<div class="col-sm-10">
+									<input id='timePicker' type="text" class="form-control" placeholder="请选择营销日期" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label"></label>
+								<div class="col-sm-10">
+									<div class='clx'>
+										<span class='fl'>已选择</span>
+										<span class='fr btn_clear_yinxiaoriqi'><i class='icon iconfont icon-delete vertical_middle'></i><span class='vertical_middle'>清除全部</span></span>
+									</div>
+									<div contenteditable="true" class="form-control" style='height: 132px;'></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">
+									<span class='require_dot'>*</span>活动类型:</label>
+								<div class='col-sm-10'>
+									<div class='row'>
+										<div class="col-sm-4">
+											<div class="dropdown">
+												<button class="btn btn-default dropdown-toggle width_full" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													请选择大区
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+													<li>
+														<a>Action</a>
+													</li>
+													<li>
+														<a>Another action</a>
+													</li>
+													<li>
+														<a>Something else here</a>
+													</li>
+													<li>
+														<a>Separated link</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="dropdown">
+												<button class="btn btn-default dropdown-toggle width_full" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													请选择分公司
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+													<li>
+														<a>Action</a>
+													</li>
+													<li>
+														<a>Another action</a>
+													</li>
+													<li>
+														<a>Something else here</a>
+													</li>
+													<li>
+														<a>Separated link</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="dropdown">
+												<button class="btn btn-default dropdown-toggle width_full" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													请选择门店
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+													<li>
+														<a>Action</a>
+													</li>
+													<li>
+														<a>Another action</a>
+													</li>
+													<li>
+														<a>Something else here</a>
+													</li>
+													<li>
+														<a>Separated link</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='form-group align_center margin_top_50'>
+								<button class='common_btn commit margin_right_25'>提交并创建事件</button>
+								<button class='common_btn cancel margin_right_25'>取消</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src='../../js/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='../../js/bootstrap.min.js'></script>
+	<!-- moment.js -->
+	<script type="text/javascript" src="../../js/daterangepicker/moment.min.js"></script>
+	<!-- daterangepicker -->
+	<script type="text/javascript" src="../../js/daterangepicker/daterangepicker.js"></script>
+	<!-- datetimepicker -->
+	<script type="text/javascript" src="../../js/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../../js/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+	$('#timeRange').daterangepicker({
+		"startDate": "2018-01-01",
+		"endDate": "2018-01-02",
+		"locale": {
+			"format": "YYYY-MM-DD",
+			"separator": " - ",
+			"applyLabel": "确定",
+			"cancelLabel": "取消",
+			"fromLabel": "从",
+			"toLabel": "至",
+			"customRangeLabel": "Custom",
+			"weekLabel": "W",
+			"daysOfWeek": [
+				"日",
+				"一",
+				"二",
+				"三",
+				"四",
+				"五",
+				"六"
+			],
+			"monthNames": [
+				"一月",
+				"二月",
+				"三月",
+				"四月",
+				"五月",
+				"六月",
+				"七月",
+				"八月",
+				"九月",
+				"十月",
+				"十一月",
+				"十二月"
+			],
+			"firstDay": 1
+		},
+	}, function(start, end, label) {
+		console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+	});
+	$('#timePicker').datetimepicker({
+		format: 'yyyy-mm-dd',
+		autoclose: true,
+		minView: '2',
+		language: 'zh-CN'
+	});
+	$('#timePicker')
+		.datetimepicker()
+		.on('changeDate', function(ev) {
+			console.log('datetimepicker changeDate:', ev.date);
+		});
+	</script>
 
 </html>

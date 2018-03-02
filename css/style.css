@@ -316,3 +316,18 @@
 .form_edit_btn.has_bg i{
 	color: #8798C6;
 }
+
+.make_avtivity_form{
+	width: 700px;
+	margin: 0 auto;
+}
+
+.btn_clear_yinxiaoriqi{
+	color: #8798C6;
+	cursor: pointer;
+}
+
+.btn_clear_yinxiaoriqi i{
+	font-size: 20px;
+	margin-right: 5px;
+}
