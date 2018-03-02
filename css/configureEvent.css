@@ -1,0 +1,42 @@
+.group-footer{
+      background-color: #F1F5FD;
+      text-align: center;
+      padding-bottom: 7px;
+}
+.width_300{
+  width:300px;
+}
+
+.form_datetime{
+  width: 120px;
+}
+
+.h-22{
+  height: 22px !important;
+}
+
+.h-30{
+  height: 30px !important;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.width_400{
+  width: 400px !important;
+}
+
+.width_100{
+  width: 100px !important;
+}
+
+.width_133{
+  width: 133px !important;
+}
+
+.margin_out_62{
+  margin-left: -62px !important;
+}

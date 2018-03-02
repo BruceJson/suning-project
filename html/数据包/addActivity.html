@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>模板</title>
+		<meta charset="utf-8">
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<!-- font -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
+		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dataPack.css">
+	</head>
+
+	<body>
+		<header class='header'>
+			<img src="../../img/1.png" alt="">
+			<p class='header_title'>苏宁智慧运营平台</p>
+		</header>
+		<div class='sidebar'>
+			<div class='avatar_box'>
+				<img src="../../img/2.png" alt="">
+				<p>苏宁</p>
+			</div>
+			<div class='sidebar_list'>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>战况监控</p>
+					<div class='active_dot transition_3'></div>
+					<!-- children -->
+					<div class='sidebar_child_list'>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+					</div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>战况分析</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>标签云图</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>武器升级</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>指挥室</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='fa fa-bus transition_3'></i></p>
+					<p class='name transition_3'>退出</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+			</div>
+		</div>
+		<div class='body_content'>
+			<div class='body_content_inner'>
+        <!-- 内容 -->
+				<!-- breadcrumbs -->
+				<div class='breadcrumbs clx'>
+          <ul class='bread_list fl'>
+						<li class='bread_item'>指挥室<span class='dot'>|</span></li>
+						<li class='bread_item'>
+							<a class='name' href="">活动管理</a><span class='dot'>|</span></li>
+						<li class='bread_item'>
+							<a class='name' href="">新增数据包营销活动</a><span class='dot'>|</span></li>
+					</ul>
+					<p class='fr' style='margin-right: 30px;'>
+						<span>现在时间：2018.01.16 星期二 19:00</span>
+					</p>
+				</div>
+        <div class='main_content'>
+					<!-- 内容 -->
+					<div class='suning_subtitle'>请创建活动</div>
+          <div class="flex-center padding_top_20">
+            <div class='form-horizontal width_full'>
+              <div class="form-group flex-right">
+                <label for="name" class="col-sm-2 control-label"><span class="font_color_red">*</span>活动名称</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="name" placeholder="请输入活动名称">
+                </div>
+              </div>
+              <div class="form-group flex-right">
+                <label for="introduce" class="col-sm-2 control-label"><span class="font_color_red">*</span>活动目的</label>
+                <div class="col-sm-5">
+                  <select class="form-control">
+                    <option>促开通</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class='form-horizontal width_full'>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">活动介绍</label>
+                <div class="col-sm-8">
+                  <textarea id="introduce" class="form-control" rows="3" placeholder="不超过100字"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='suning_subtitle'>请筛选营销人群</div>
+          <div class="nav-container">
+
+              <!-- Nav tabs -->
+              <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">标签</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">手工导入</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">SQL</a></li>
+                <li id="my-collection" role="presentation" class="float-right"><button class="btn-blue" type="submit">我的收藏</button></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content border-no-top padding_20">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                  <div class="flex">
+                    <table class='suning_table margin_top_10 width-73-percent'>
+        							<thead>
+        								<tr>
+        									<th>会员标签名称</th>
+        									<th>标签描述</th>
+        									<th>操作</th>
+        								</tr>
+        							</thead>
+        							<tbody>
+        								<tr>
+        									<td class="name">易付宝登录名</td>
+        									<td>日历营销-生活场景-体育</td>
+        									<td class="td-a">
+                            <a href="javascript:;" class="setCondition">设为条件</a> | <a href="">设为收藏</a>
+                          </td>
+        								</tr>
+                        <tr>
+        									<td>易付宝</td>
+        									<td>重装开业</td>
+                          <td class="td-a">
+                            <a href="javascript:;" class="setCondition">设为条件</a> | <a href="">设为收藏</a>
+                          </td>
+        								</tr>
+        								<tr>
+        									<td>常规活动</td>
+        									<td>常规活动</td>
+                          <td class="td-a">
+                            <a href="javascript:;" class="setCondition">设为条件</a> | <a href="">设为收藏</a>
+                          </td>
+        								</tr>
+        								<tr>
+        									<td>常规活动</td>
+        									<td>常规活动</td>
+                          <td class="td-a">
+                            <a href="javascript:;" class="setCondition">设为条件</a> | <a href="">设为收藏</a>
+                          </td>
+        								</tr>
+        							</tbody>
+        						</table>
+                    <div class="panel panel-default margin_top_10 width-400 margin_left_20">
+                      <div class="panel-heading background-color-default">筛选条件</div>
+                      <div class="panel-body">
+                        <ul>
+                          <li>1.易付宝登录名 <a href="javascript:;" class="glyphicon glyphicon-remove font_color_red" aria-hidden="true"></a></li>
+                          <li>2.易付宝登录名 <a href="javascript:;" class="glyphicon glyphicon-remove font_color_red"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                  <div class="import-container margin_top_50 margin_bottom_50">
+                    <a href="#" class="inline_block width_full color-blue margin_left_250 margin_bottom_5">下载模板</a>
+                    <div class="form-content-center">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <input type="password" class="form-control width-600"placeholder="请选择上传文件">
+                        </div>
+                        <button type="submit" class="common_btn">选择文件</button>
+                      </form>
+                    </div>
+                    <p class="inline_block width_full margin_left_250 margin_top_20 color-ddd">
+                      提示：
+                    </p>
+                    <p class="inline_block width_full margin_left_250 color-ddd">
+                      1. 上传文件必须为固定格式（请注意单元格格式）的Excel文件，请参照模板上传。
+                    </p>
+                    <p class="inline_block width_full margin_left_250 color-ddd">
+                      2. 推荐使用Chrome、Firefox等浏览器以获取最佳体验。
+                    </p>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                  <div class="sql-container">
+                    <p class="margin_bottom_5">取数SQL:</p>
+                    <div class="">
+                        <textarea class="form-control" rows="5" placeholder="请输入取数SQL"></textarea>
+                    </div>
+                    <div class="margin_top_20 flex-content-center">
+                      <button class="btn btn-default" type="submit">检测SQL</button>
+                      <button class="common_btn margin_left_15">执行</button>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">...4</div>
+              </div>
+              <div class="btn-next margin_top_20 padding_bottom_40">
+                <button class='common_btn vertical_middle'>下一步</button>
+              </div>
+            </div>
+				</div>
+      </div>
+		</div>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/dataPack.js"></script>
+	</body>
+
+</html>
