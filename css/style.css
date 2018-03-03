@@ -288,12 +288,12 @@
 	-o-transform: translateX(-70%);
 }
 
-.preview_box .time{
+.preview_box .time {
 	font-size: 13px;
 	margin-bottom: 10px;
 }
 
-.form_edit_btn{
+.form_edit_btn {
 	display: inline-block;
 	width: 34px;
 	height: 34px;
@@ -303,31 +303,66 @@
 	line-height: 34px;
 }
 
-.form_edit_btn i{
+.form_edit_btn i {
 	font-size: 24px;
 	color: #0052FE;
 }
 
-.form_edit_btn.has_bg{
+.form_edit_btn.has_bg {
 	background-color: #DFE3E9;
 	border: none;
 }
 
-.form_edit_btn.has_bg i{
+.form_edit_btn.has_bg i {
 	color: #8798C6;
 }
 
-.make_avtivity_form{
+.make_avtivity_form {
 	width: 700px;
 	margin: 0 auto;
 }
 
-.btn_clear_yinxiaoriqi{
+.btn_clear_yinxiaoriqi {
 	color: #8798C6;
 	cursor: pointer;
 }
 
-.btn_clear_yinxiaoriqi i{
+.btn_clear_yinxiaoriqi i {
 	font-size: 20px;
 	margin-right: 5px;
+}
+
+.select_time_item {
+	background-color: #8093ff;
+	color: #fff;
+	padding: 0px 11px;
+	border-radius: 4px;
+	padding-right: 8px;
+	margin-right: 3px;
+	margin-bottom: 6px;
+	-webkit-user-select: none;
+	/* Chrome all / Safari all */
+	-moz-user-select: none;
+	/* Firefox all */
+	-ms-user-select: none;
+	/* IE 10+ */
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.delete_select_time {
+	cursor: pointer;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.delete_select_time:hover {
+	color: #6666FF;
 }

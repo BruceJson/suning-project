@@ -70,6 +70,7 @@
 
 
 
+
 /*checkbox*/
 
 .checkbox {
@@ -129,6 +130,7 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
 
 
 
@@ -207,6 +209,7 @@
 
 
 
+
 /*form-group*/
 
 .control-label .require_dot {
@@ -214,6 +217,7 @@
 	font-size: 18px;
 	vertical-align: top;
 }
+
 
 
 
@@ -255,6 +259,7 @@
 
 
 
+
 /*table top*/
 
 .table_top_area {
@@ -274,10 +279,6 @@
 	margin: 0 3px;
 }
 
-.table_top_area .btn_box {
-	float: right;
-}
-
 .table_top_area .btn_box button {
 	padding: 5px 12px;
 	color: #6666FF;
@@ -291,6 +292,7 @@
 	font-size: 18px;
 	margin-right: 3px;
 }
+
 
 
 
@@ -362,11 +364,13 @@
 
 
 
+
 /*table bottom*/
 
 .table_bottom_area {
 	margin-top: 20px;
 }
+
 
 
 
@@ -389,6 +393,7 @@
 
 
 
+
 /*tooltip*/
 
 .tooltip.bottom .tooltip-arrow {
@@ -403,13 +408,15 @@
 
 
 
+
 /*下拉框*/
 
 .dropdown-menu {
 	width: 100%;
 }
 
-.dropdown-menu.datetimepicker {
+.dropdown-menu.datetimepicker,
+.dropdown-menu.daterangepicker {
 	width: auto;
 }
 
@@ -424,9 +431,11 @@
 }
 
 
+
 /*modal*/
+
 .modal .modal-dialog {
-/*	position: absolute;
+	/*	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-65%) !important;
@@ -436,22 +445,22 @@
 	-o-transform: translateX(-50%) translateY(-65%) !important;*/
 }
 
-.modal-header{
+.modal-header {
 	background-color: #8093FF;
 	color: #fff;
 }
 
-.modal-header .close{
+.modal-header .close {
 	color: #fff;
 	opacity: 1;
 }
 
-.modal-body{
+.modal-body {
 	padding: 32px 42px;
 	padding-bottom: 0;
 }
 
-.modal-footer{
+.modal-footer {
 	padding: 25px;
 	border-top: none;
 }

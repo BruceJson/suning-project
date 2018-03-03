@@ -10,11 +10,12 @@
 		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
 		<!-- datetimepicker -->
-		<link rel="stylesheet" type="text/css" href="../../js/datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="../../js/plugin/datetimepicker/css/bootstrap-datetimepicker.min.css">
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="../../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
 		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/configureEvent.css">
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	</head>
 
@@ -236,8 +237,86 @@
 									<input type="text" class="form-control" placeholder="请输入最大发送人数，不超过10位数" required>
 								</div>
 								<span class='fl' style='margin-top: 7px;margin-right: 60px;'>人</span>
-								<button class='fl common_btn' style='margin-top: 2px;background-color: #8093FF;'>预估人数</button>
-								<p class="fl" style='font-size: 11px;font-size: 11px;margin-left: 15px;margin-top: 9px;color: #FF7C82;'>按条件筛选出10000000人</p>
+								<button id='guess_person_num' class='fl common_btn' style='margin-top: 2px;background-color: #8093FF;'>预估人数</button>
+								<p id='person_num_tip' class="fl" style='font-size: 11px;font-size: 11px;margin-left: 15px;margin-top: 9px;color: #FF7C82;display: none;'>按条件筛选出10000000人</p>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">
+									<span class='require_dot'>*</span>发送分组:</label>
+								<div class="col-sm-9">
+									<div class="radio margin_right_20">
+										<label>
+											<input type="radio" name='group' value="0">
+											<span class='icon_box'>
+												<i class='icon iconfont icon-gou'></i>
+												<i class='icon iconfont icon-gouxuan'></i>
+											</span>
+											<span>不分组</span>
+										</label>
+									</div>
+									<div class="radio margin_right_20">
+										<label>
+											<input type="radio" checked='true' name='group' value="1">
+											<span class='icon_box'>
+												<i class='icon iconfont icon-gou'></i>
+												<i class='icon iconfont icon-gouxuan'></i>
+											</span>
+											<span>标签分组</span>
+										</label>
+									</div>
+									<div class="radio margin_right_20">
+										<label>
+											<input type="radio" name='group' value="2">
+											<span class='icon_box'>
+												<i class='icon iconfont icon-gou'></i>
+												<i class='icon iconfont icon-gouxuan'></i>
+											</span>
+											<span>随机分组</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div id="group-type" class="form-group">
+								<label class="col-sm-3 control-label">
+								</label>
+								<div class="col-sm-9">
+									<div id="label-group" class="fl group-footer" style='display: none;padding-left: 45px;padding-right: 45px;'>
+										<div class='checkbox margin_right_10'>
+											<label>
+												<input type="checkbox" name='rule'>
+												<span class='icon_box'>
+													<i class='fa fa-check-square'></i>
+													<i class='fa fa-square-o'></i>
+												</span>
+												<span>
+													易购会员状态
+												</span>
+											</label>
+										</div>
+										<div class='checkbox'>
+											<label>
+												<input type="checkbox" name='rule'>
+												<span class='icon_box'>
+													<i class='fa fa-check-square'></i>
+													<i class='fa fa-square-o'></i>
+												</span>
+												<span>
+													易购会员状态
+												</span>
+											</label>
+										</div>
+									</div>
+									<div id="random-group" class='fl select width_300  group-footer' style='display: none;'>
+										<select id="random_group_select" style='width: 112px;margin-right: 15px;height:25px;margin-top: 5px;'>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										组
+									</div>
+								</div>
 							</div>
 							<div class="form-group">
 								<label class="col-sm-3 control-label">
@@ -245,7 +324,7 @@
 								<div class="col-sm-9">
 									<div class="radio margin_right_20">
 										<label>
-											<input type="radio" name='radio_send_times'>
+											<input type="radio" checked='true' name='radio_send_times' value='0'>
 											<span class='icon_box'>
 												<i class='icon iconfont icon-gou'></i>
 												<i class='icon iconfont icon-gouxuan'></i>
@@ -255,7 +334,7 @@
 									</div>
 									<div class="radio margin_right_20">
 										<label>
-											<input type="radio" name='radio_send_times'>
+											<input type="radio" name='radio_send_times' value='1'>
 											<span class='icon_box'>
 												<i class='icon iconfont icon-gou'></i>
 												<i class='icon iconfont icon-gouxuan'></i>
@@ -265,7 +344,7 @@
 									</div>
 									<div class="radio margin_right_20">
 										<label>
-											<input type="radio" name='radio_send_times'>
+											<input type="radio" name='radio_send_times' value='2'>
 											<span class='icon_box'>
 												<i class='icon iconfont icon-gou'></i>
 												<i class='icon iconfont icon-gouxuan'></i>
@@ -275,7 +354,7 @@
 									</div>
 									<div class="radio margin_right_20">
 										<label>
-											<input type="radio" name='radio_send_times'>
+											<input type="radio" name='radio_send_times' value='3'>
 											<span class='icon_box'>
 												<i class='icon iconfont icon-gou'></i>
 												<i class='icon iconfont icon-gouxuan'></i>
@@ -285,10 +364,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
+							<div id='sendTimeArea' class="form-group" style='display: none;'>
 								<label class="col-sm-3 control-label">发送时间:</label>
 								<div class="col-sm-9">
-									<div class='fl select'>
+									<div id='sendTimeWeek' class='fl select'>
 										<select style='width: 112px;margin-right: 15px;'>
 											<option>星期日</option>
 											<option>星期一</option>
@@ -299,7 +378,7 @@
 											<option>星期六</option>
 										</select>
 									</div>
-									<div class='fl select'>
+									<div id='sendTimeHour' class='fl select'>
 										<select style='width: 112px;'>
 											<option>星期日</option>
 											<option>星期一</option>
@@ -310,7 +389,6 @@
 											<option>星期六</option>
 										</select>
 									</div>
-									<span class='fl' style='margin-top: 7px;margin-right: 60px;margin-left: 15px;'>人</span>
 								</div>
 							</div>
 							<div class="form-group">
@@ -335,8 +413,9 @@
 										<div class='group_box'>
 											<div class='row'>
 												<div class='col-sm-6'>
-													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>去除人群:</label>
+													<div class="form-group" id='group_setting_1'>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>去除人群:</label>
 														<div class="col-sm-8">
 															<div class="radio margin_right_20">
 																<label>
@@ -360,14 +439,16 @@
 															</div>
 														</div>
 													</div>
-													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>发送时间:</label>
+													<div class="form-group" id='group_setting_2'>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>发送时间:</label>
 														<div class="col-sm-8">
 															<input id='timePicker' type="text" class="form-control" placeholder="请选择发送时间" required>
 														</div>
 													</div>
-													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>是否发送:</label>
+													<div class="form-group" id='group_setting_3'>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>是否发送:</label>
 														<div class="col-sm-8">
 															<div class="radio margin_right_20">
 																<label>
@@ -392,7 +473,8 @@
 														</div>
 													</div>
 													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>发送通道:</label>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>发送通道:</label>
 														<div class="col-sm-8">
 															<select class="form-control">
 																<option>请选择发送通道</option>
@@ -404,7 +486,8 @@
 														</div>
 													</div>
 													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>发送通道:</label>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>发送通道:</label>
 														<div class="col-sm-8">
 															<div class="radio margin_right_20">
 																<label>
@@ -429,20 +512,57 @@
 														</div>
 													</div>
 													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>替换字段:</label>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>活动权益:</label>
 														<div class="col-sm-8">
-															<button class='common_btn cancel small fl'>门店地址</button>
-															<button class='common_btn cancel small fl margin_left_15'>居住地址</button>
+															<div class="flex-center">
+																<div class="radio margin_right_20">
+																	<label>
+																		<input type="radio" name='rule'>
+																		<span class='icon_box'>
+																			<i class='icon iconfont icon-gou'></i>
+																			<i class='icon iconfont icon-gouxuan'></i>
+																		</span>
+																		<span>易购物</span>
+																	</label>
+																</div>
+																<button type="button" class='common_btn cancel small fr h-22 no_padding' data-toggle="modal" data-target="#activity_modal" style='margin-top: 7px;'>
+																	<span class="glyphicon glyphicon-plus"></span> 请选择
+																</button>
+															</div>
+															<div class="flex-center">
+																<div class="radio margin_right_20">
+																	<label>
+																		<input type="radio" name='rule'>
+																		<span class='icon_box'>
+																			<i class='icon iconfont icon-gou'></i>
+																			<i class='icon iconfont icon-gouxuan'></i>
+																		</span>
+																		<span>任性付券</span>
+																	</label>
+																</div>
+																<button type="button" class='common_btn cancel small fr h-22 no_padding' data-toggle="modal" data-target="#activity_modal2" style='margin-top: 7px;'>
+																	<span class="glyphicon glyphicon-plus"></span>请选择</button>
+															</div>
+														</div>
+													</div>
+													<div class="form-group" id='replace_context_area'>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>替换字段:</label>
+														<div class="col-sm-8">
+															<button class='replace_item common_btn cancel small fl'>门店地址</button>
+															<button class='replace_item common_btn cancel small fl margin_left_15'>居住地址</button>
 														</div>
 													</div>
 													<div class="form-group">
-														<label class="col-sm-4 control-label"><span class='require_dot'>*</span>发送话术:</label>
+														<label class="col-sm-4 control-label">
+															<span class='require_dot'>*</span>发送话术:</label>
 														<button id='btn_select_model' class='fr common_btn small' style='margin-top: 2px;'>选择模板</button>
 														<div class='col-sm-12'>
-															<textarea style='width: 95%;margin-left: 9%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'></textarea>
+															<textarea id='textArea_model_context' style='width: 95%;margin-left: 9%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'></textarea>
 														</div>
 														<div class='col-sm-12'>
-															<button class='common_btn small' style='margin-top: 5px;margin-left: 9%;'>生成预览</button>
+															<button id='btn_make_preview' class='common_btn small' style='margin-top: 5px;margin-left: 9%;'>生成预览</button>
 														</div>
 													</div>
 												</div>
@@ -450,9 +570,9 @@
 													<div style='padding:0 19px;'>
 														<p class='preview_header'>短信预览</p>
 														<div class='preview_box'>
-															<p class='time'>2017年07月13日</p>
+															<p id='preview_time' class='time'>yyyy-mm-dd</p>
 															<div class='preview_text_box'>
-																<textarea style='display: block;width: 100%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'></textarea>
+																<textarea id='textArea_model_context_preview' style='display: block;width: 100%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'></textarea>
 															</div>
 															<img class='preview_avatar' src="../../img/6.png" alt="">
 														</div>
@@ -478,7 +598,9 @@
 			<div class="modal-dialog" role="document" style='width: 960px;'>
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 						<h4 class="modal-title">选择话术模板</h4>
 					</div>
 					<div class="modal-body">
@@ -550,7 +672,7 @@
 					</div>
 					<div class="modal-footer align_center">
 						<button class='common_btn cancel margin_right_25' data-dismiss="modal">取消</button>
-						<button class='common_btn commit'>确认</button>
+						<button id='btn_selectModel_ok' class='common_btn commit'>确认</button>
 					</div>
 				</div>
 			</div>
@@ -560,7 +682,9 @@
 			<div class="modal-dialog" role="document" style='width: 960px;'>
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 						<h4 class="modal-title">选择话术模板</h4>
 					</div>
 					<div class="modal-body">
@@ -784,48 +908,160 @@
 				</div>
 			</div>
 		</div>
+		<div id="activity_modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">选择活动权益</h4>
+					</div>
+					<div class="modal-body">
+						<div class="">
+							<table class='suning_table margin_top_10 width-73-percent'>
+								<thead>
+									<tr>
+										<th>选择</th>
+										<th>名称</th>
+										<th>权益活动编号</th>
+										<th>权益类型</th>
+										<th>子类型</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" id="btn_active_ok">确定</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+		<div id="activity_modal2" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">选择活动权益</h4>
+					</div>
+					<div class="modal-body">
+						<div class="">
+							<table class='suning_table margin_top_10 width-73-percent'>
+								<thead>
+									<tr>
+										<th>选择</th>
+										<th>名称</th>
+										<th>权益活动编号</th>
+										<th>权益类型</th>
+										<th>子类型</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="radio" name="td" />
+										</td>
+										<td class="name">易付宝登录名</td>
+										<td>10150160</td>
+										<td>易购</td>
+										<td>现金券</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" id="btn_active2_ok">确定</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
 	</body>
-	<script type="text/javascript" src='../../js/jquery-3.2.1.min.js'></script>
-	<script type="text/javascript" src='../../js/bootstrap.min.js'></script>
+	<script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='../../js/lib/bootstrap/bootstrap.min.js'></script>
 	<!-- moment.js -->
-	<script type="text/javascript" src="../../js/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="../../js/plugin/daterangepicker/moment.min.js"></script>
 	<!-- daterangepicker -->
-	<script type="text/javascript" src="../../js/daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript" src="../../js/plugin/daterangepicker/daterangepicker.js"></script>
 	<!-- datetimepicker -->
-	<script type="text/javascript" src="../../js/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-	<script type="text/javascript" src="../../js/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-	<script>
-	var $selectModelDialog = $('#select_model_dialog');
-	var $selectCheckDialog = $('#select_check_dialog');
-
-	function initTimePicker() {
-		$('#timePicker').datetimepicker({
-			format: 'yyyy-mm-dd',
-			autoclose: true,
-			minView: '2',
-			language: 'zh-CN'
-		});
-		$('#timePicker').datetimepicker().on('changeDate', function(ev) {
-			console.log('datetimepicker changeDate:', ev.date);
-		});
-	}
-
-	function bindEvent() {
-		$('#btn_select_model').click(function() {
-			$selectModelDialog.modal('show');
-		});
-
-		$('#btn_submit_thing').click(function() {
-			$selectCheckDialog.modal('show');
-		});
-	}
-
-	function init() {
-		initTimePicker();
-		bindEvent();
-	}
-
-	init();
-	</script>
+	<script type="text/javascript" src="../../js/plugin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../../js/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+	<!-- pagejs -->
+	<script type="text/javascript" src="../../js/page/setting-page.js"></script>
 
 </html>
