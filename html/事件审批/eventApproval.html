@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>事件审批</title>
+		<meta charset="utf-8">
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<!-- pagination -->
+		<link rel="stylesheet" type="text/css" href="../../css/pagination.css">
+		<!-- font -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
+		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <style media="screen">
+      .suning_table1 tr td:nth-child(4n - 3),
+      .suning_table1 tr td:nth-child(4n - 1){
+            background-color: #F1F5FE;
+            border: none;
+            font-size: 14px;
+            color: #4E5D73;
+      }
+
+      .td_val{
+        text-align: left !important;
+        padding: 20px 30px;
+            color: #4E5D73;
+      }
+      .width_100{
+            width: 100px;
+      }
+    </style>
+	</head>
+
+	<body>
+		<header class='header'>
+			<img src="../../img/1.png" alt="">
+			<p class='header_title'>苏宁智慧运营平台</p>
+		</header>
+		<div class='sidebar'>
+			<div class='avatar_box'>
+				<img src="../../img/2.png" alt="">
+				<p>苏宁</p>
+			</div>
+			<div class='sidebar_list'>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhankuangjiankong transition_3'></i></p>
+					<p class='name transition_3'>战况监控</p>
+					<div class='active_dot transition_3'></div>
+					<!-- children -->
+					<div class='sidebar_child_list'>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+					</div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhankuangfenxi transition_3'></i></p>
+					<p class='name transition_3'>战况分析</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-biaoqianyuntu transition_3'></i></p>
+					<p class='name transition_3'>标签云图</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-wuqishengji transition_3'></i></p>
+					<p class='name transition_3'>武器升级</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhihuishi transition_3'></i></p>
+					<p class='name transition_3'>指挥室</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-tuichu transition_3'></i></p>
+					<p class='name transition_3'>退出</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+			</div>
+		</div>
+		<div class='body_content'>
+			<div class='body_content_inner'>
+				<!-- 内容 -->
+				<!-- breadcrumbs -->
+				<div class='breadcrumbs clx'>
+					<ul class='bread_list fl'>
+						<li class='bread_item'>指挥室<span class='dot'>|</span></li>
+						<li class='bread_item'>
+							<a class='name' href="">活动管理</a><span class='dot'>|</span></li>
+					</ul>
+					<p class='fr' style='margin-right: 30px;'>
+						<span>现在时间：2018.01.16 星期二 19:00</span>
+					</p>
+				</div>
+				<div class='main_content shopManage_page'>
+					<div class='tab_list_1 clx'>
+						<div class='tab_item transition_3 '>
+							<p>线下营销</p>
+						</div>
+						<div class='tab_item transition_3'>
+							<p>线上营销</p>
+						</div>
+						<div class='tab_item transition_3'>
+							<p>数据营销</p>
+						</div>
+						<div class='tab_item transition_3 active'>
+							<p>事件审核</p>
+						</div>
+					</div>
+					<form class='part1' style='margin-top: -30px;background-color: #fff;'>
+						<!-- 左边 -->
+						<div class="form-inline fl" style='width: 85%;'>
+							<div class="fl form-group" style='width: 55%;'>
+								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>活动类型：</label>
+								<select class="form-control" style='width: 22%;margin-right: 5px;'>
+									<option>线下营销</option>
+									<option>111</option>
+									<option>111</option>
+									<option>111</option>
+									<option>111</option>
+								</select>
+							</div>
+							<div class="fl form-group " style='width: 45%;display:flex;align-items:center;'>
+								<label for="inputPassword3" class="control-label margin_right_20">活动日期：</label>
+								<!-- 下拉框 -->
+								<input id="timeRange1"  type="text" value="" readonly class="form-control form_datetime h-30" data-date-format="yyyy-mm-dd" style='width: 32%' type="" name="">
+                <span class="margin_left_20 margin_right_20">-</span>
+                <input id="timeRange2"  type="text" value="" readonly class="form-control form_datetime h-30" data-date-format="yyyy-mm-dd" style='width: 32%' type="" name="">
+							</div>
+							<div class="fl form-group" style='width: 55%;'>
+								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>审批状态：</label>
+
+								<select class="form-control" style='width: 22%;margin-right: 5px;'>
+									<option>请选择</option>
+									<option>111</option>
+									<option>111</option>
+									<option>111</option>
+									<option>111</option>
+								</select>
+
+							</div>
+							<div class="fl form-group" style='width: 45%;'>
+								<label for="inputPassword3" class="control-label margin_right_20">事件名称：</label>
+								<input type="text" class="form-control" placeholder="请输入事件名称" style='width: 72%'>
+							</div>
+						</div>
+						<!-- 分割线 -->
+						<div class='cut_line'></div>
+						<!-- 右边 -->
+						<div class='fl submit_box align_center' style='width: 15%;height: 100%'>
+							<span class='inline_block width_0 height_full vertical_middle'></span>
+							<button class='common_btn vertical_middle'>搜索</button>
+						</div>
+					</form>
+					<div class='part2'>
+
+						<table class='suning_table margin_top_10'>
+							<thead>
+								<tr>
+									<th>事件名称</th>
+									<th>活动类型</th>
+									<th>活动日期</th>
+									<th>营销日期</th>
+									<th>审批状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>元旦活动</td>
+									<td>线下营销</td>
+									<td>2018.01.01 ～ 2018.01.03</td>
+									<td>2018.01.01</td>
+									<td>待审批</td>
+									<td>
+										<a class='form_edit_btn margin_right_15' data-toggle="tooltip" data-placement="bottom" title="审批">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- table bottom -->
+						<div class='table_bottom_area clx'>
+							<div class='fl'>
+								<span style='margin-right: 5px;'>每页显示</span>
+								<input style='width: 40px;border:1px solid #ddd;border-radius: 4px;' type="number" name="">
+							</div>
+							<div class='fr'>
+								<div id='pagination-container'></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+
+    <div id="approvalModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog" role="document" style="width:960px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">审批事件</h4>
+          </div>
+          <div class="modal-body">
+            <div class='main_content shopManage_page height_full'>
+    					<table class='suning_table1' style="width:870px;">
+    						<tbody>
+    							<tr>
+    								<td>活动名称</td>
+    								<td class="td_val">
+    								</td>
+    								<td>活动类型</td>
+    								<td class="td_val">
+    								</td>
+    							</tr>
+    							<tr>
+    								<td>活动目的</td>
+    								<td class="td_val">
+    								</td>
+    								<td>活动日期</td>
+    								<td class="td_val">
+    								</td>
+    							</tr>
+    							<tr>
+    								<td>活动介绍</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+    							<tr>
+    								<td>事件名称</td>
+    								<td class="td_val">
+
+    								</td>
+    								<td>营销日期</td>
+    								<td class="td_val">
+
+    								</td>
+    							</tr>
+    							<tr>
+                    <td>筛选规则</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>去重规则</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>去重人群</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>最大发送人群</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>分组类型</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>分组话术</td>
+    								<td colspan="3" class="td_val">
+                      <p>分组名称：尊敬的用户，感谢您XXXXXX。发送</p>
+                      <p>分组名称：尊敬的用户，感谢您XXXXXX。发送</p>
+                      <p>分组名称：尊敬的用户，感谢您XXXXXX。发送</p>
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>发送渠道</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+                  <tr>
+                    <td>发送通道</td>
+    								<td colspan="3" class="td_val">
+    								</td>
+    							</tr>
+    						</tbody>
+    					</table>
+    				</div>
+          </div>
+          <div class="modal-footer" style="text-align: center;">
+            <button type="button" class="common_btn margin_right_15 width_100" data-dismiss="modal">取消</button>
+            <button id="btn_pass" type="button" class="common_btn margin_right_15 width_100" >通过</button>
+            <button type="button" class="common_btn margin_right_15 width_100" data-dismiss="modal">拒绝</button>
+            <button type="button" class="common_btn width_100" data-dismiss="modal">退回</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+  <div id="confirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">审批事件</h4>
+        </div>
+        <div class="modal-body margin_bottom_20">
+          <h3 class="align_center margin_top_50 margin_bottom_50" style="color:#333;">确认通过该事件？</h3>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #ddd;margin: 0 -20px;">
+          <div class='form-group align_center'>
+            <button class='common_btn cancel margin_right_25' data-dismiss="modal">取消</button>
+            <button id="btn_ok" class='common_btn commit margin_right_25' data-dismiss="modal">确认</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	</body>
+	<script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='../../js/lib/bootstrap/bootstrap.min.js'></script>
+
+  <script type="text/javascript" src="../../js/plugin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="../../js/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script type="text/javascript" src="../../js/plugin/pagination/pagination.min.js"></script>
+	<script type="text/javascript">
+
+
+	var arr = [];
+	for (var i = 0; i < 100; i++) {
+		arr.push(i);
+	}
+
+	$('#pagination-container').pagination({
+		dataSource: arr,
+		prevText: '上一页',
+		nextText: '下一页',
+		showGoInput: true,
+		showGoButton: true,
+		goButtonText: '确定',
+		formatGoInput: '第 <%= input %> 页',
+		callback: function(data, pagination) {
+			console.log(data);
+		}
+	})
+
+	$('[data-toggle="tooltip"]').tooltip()
+
+
+
+  $(function(){
+    $("#timeRange1").datetimepicker({
+      minView: "month", //选择日期后，不会再跳转去选择时分秒
+      language:  'zh-CN',
+      format: 'yyyy-mm-dd',
+      todayBtn:  1,
+      autoclose: 1,
+    });
+
+    $("#timeRange2").datetimepicker({
+      minView: "month", //选择日期后，不会再跳转去选择时分秒
+      language:  'zh-CN',
+      format: 'yyyy-mm-dd',
+      todayBtn:  1,
+      autoclose: 1,
+    });
+
+    $(".form_edit_btn").click(function(){
+        $("#approvalModal").modal();
+    })
+
+    $("#btn_pass").click(function(){
+      $("#confirmModal").modal();
+    })
+
+    $("#btn_ok").click(function(){
+      $("#approvalModal").modal('hide');
+    })
+  });
+
+	</script>
+
+</html>
