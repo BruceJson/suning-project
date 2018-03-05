@@ -273,7 +273,7 @@ option = {
                 }
             },
 
-            symbol: 'image://../img/5.png',
+            symbol: 'image://../../img/5.png',
             symbolSize: [10, 15]
         },
         {
