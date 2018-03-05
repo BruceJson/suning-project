@@ -90,7 +90,7 @@
 	opacity: 0;
 	visibility: hidden;
 	left: -1000px;
-	position: absolute;
+	position: absolute !important;
 }
 
 .checkbox input[type='checkbox']+span {
@@ -158,7 +158,7 @@
 	opacity: 0;
 	visibility: hidden;
 	left: -1000px;
-	position: absolute;
+	position: absolute !important;
 }
 
 .radio input[type='radio']+span {
