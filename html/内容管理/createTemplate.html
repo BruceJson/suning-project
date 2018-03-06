@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>新增短信模板</title>
+		<meta charset="utf-8">
+    <!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<!-- pagination -->
+		<link rel="stylesheet" type="text/css" href="../../css/pagination.css">
+		<!-- font -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
+		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <style>
+      .flex-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .padding_top_50{
+        padding-top:50px;
+      }
+      .padding_bottom_100{
+        padding-bottom: 100px;
+      }
+    </style>
+	</head>
+
+	<body>
+		<header class='header'>
+			<img src="../../img/1.png" alt="">
+			<p class='header_title'>苏宁智慧运营平台</p>
+		</header>
+		<div class='sidebar'>
+			<div class='avatar_box'>
+				<img src="../../img/2.png" alt="">
+				<p>苏宁</p>
+			</div>
+			<div class='sidebar_list'>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhankuangjiankong transition_3'></i></p>
+					<p class='name transition_3'>战况监控</p>
+					<div class='active_dot transition_3'></div>
+					<!-- children -->
+					<div class='sidebar_child_list'>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+						</div>
+					</div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhankuangfenxi transition_3'></i></p>
+					<p class='name transition_3'>战况分析</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-biaoqianyuntu transition_3'></i></p>
+					<p class='name transition_3'>标签云图</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-wuqishengji transition_3'></i></p>
+					<p class='name transition_3'>武器升级</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-zhihuishi transition_3'></i></p>
+					<p class='name transition_3'>指挥室</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p><i class='icon iconfont icon-tuichu transition_3'></i></p>
+					<p class='name transition_3'>退出</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+			</div>
+		</div>
+		<div class='body_content'>
+			<div class='body_content_inner'>
+				<!-- 内容 -->
+				<!-- breadcrumbs -->
+				<div class='breadcrumbs clx'>
+					<ul class='bread_list fl'>
+						<li class='bread_item'>指挥室<span class='dot'>|</span></li>
+						<li class='bread_item'>
+							<a class='name' href="">内容管理</a><span class='dot'>|</span></li>
+						<li class='bread_item'>
+							<a class='name' href="">新增短信模板</a><span class='dot'>|</span></li>
+					</ul>
+					<p class='fr' style='margin-right: 30px;'>
+						<span>现在时间：2018.01.16 星期二 19:00</span>
+					</p>
+				</div>
+				<div class='main_content'>
+          <div class="form-horizontal">
+            <div class="form-group flex-center padding_top_50 padding_bottom_100">
+  								<div class="col-sm-8">
+  									<div>
+  										<div id="tab_content" class='group_box' style="margin-top:0;padding: 50px 30px;">
+  											<div class='row'>
+  												<div class='col-sm-6'>
+                            <div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															<span class='require_dot'>*</span>模板名称:</label>
+  														<div class="col-sm-8">
+  															<input type="text" class="form-control">
+  														</div>
+  													</div>
+                            <div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															替换字段:</label>
+  														<div class="col-sm-8">
+  															<button id="storeAddr" class='common_btn cancel small fl'>门店地址</button>
+  															<button id="liveAddr" class='common_btn cancel small fl margin_left_15'>居住地址</button>
+  														</div>
+  													</div>
+  													<div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															<span class='require_dot'>*</span>发送话术:</label>
+  														<div class='col-sm-8'>
+  															<textarea id="txt_content" style='width: 100%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'>亲爱的${1}用户，感谢您对任性付的支持，祝您生活愉快</textarea>
+                                <button class='common_btn small' style='margin-top: 5px;' id="btn_preview">生成预览</button>
+  														</div>
+  													</div>
+
+  													<div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															<span class='require_dot'>*</span>发送渠道:</label>
+  														<div class="col-sm-8">
+  															<div class='fl select'>
+  																<select style='width: 150px;margin-right: 15px;'>
+  																	<option>-请选择-</option>
+  																	<option>短信</option>
+  																	<option>push</option>
+  																</select>
+  															</div>
+  														</div>
+  													</div>
+  													<div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															是否长期有效:</label>
+  														<div class="col-sm-8">
+  															<div class="radio margin_right_20">
+  																<label>
+  																	<input type="radio" name='rule'>
+  																	<span class='icon_box'>
+  																		<i class='icon iconfont icon-gou'></i>
+  																		<i class='icon iconfont icon-gouxuan'></i>
+  																	</span>
+  																	<span>是</span>
+  																</label>
+  															</div>
+  															<div class="radio margin_right_20">
+  																<label>
+  																	<input type="radio" name='rule'>
+  																	<span class='icon_box'>
+  																		<i class='icon iconfont icon-gou'></i>
+  																		<i class='icon iconfont icon-gouxuan'></i>
+  																	</span>
+  																	<span>否</span>
+  																</label>
+  															</div>
+  														</div>
+  													</div>
+  													<div class="form-group">
+  														<label class="col-sm-4 control-label">
+  															有效期:</label>
+  														<div class="col-sm-8">
+                                <div style="display:flex;align-items:center;">
+                                  <input id="timeRange1"  type="text" value="" readonly class="form-control form_datetime h-30" data-date-format="yyyy-mm-dd" style='width: 50%' type="" name="">
+                                  <span class="margin_left_10 margin_right_10">-</span>
+                                  <input id="timeRange2"  type="text" value="" readonly class="form-control form_datetime h-30" data-date-format="yyyy-mm-dd" style='width: 50%' type="" name="">
+                                </div>
+  														</div>
+                            </div>
+  												</div>
+  												<div class='col-sm-6'>
+  													<div style='padding:0 19px;'>
+  														<p class='preview_header'>模板预览</p>
+  														<div class='preview_box' style="padding-top:20px;">
+  															<p class='time'>yyyy-mm-dd</p>
+  															<div class='preview_text_box'>
+  																<textarea id="txt_content_right" style='display: block;width: 100%;background-color: #F1F5FD;border: 1px solid #DFE3E9;height: 136px;border-radius: 4px;'></textarea>
+  															</div>
+  															<img class='preview_avatar' src="../../img/6.png" alt="">
+  														</div>
+  													</div>
+  												</div>
+  											</div>
+
+                        <div class="row flex-center margin_top_50">
+                          <button class='common_btn cancel margin_right_25'>取消</button>
+              						<button class='common_btn commit'>保存</button>
+                        </div>
+  										</div>
+  									</div>
+  								</div>
+  							</div>
+          </div>
+					<!-- 内容 -->
+
+				</div>
+			</div>
+		</div>
+	</body>
+  <script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='../../js/lib/bootstrap/bootstrap.min.js'></script>
+
+  <script type="text/javascript" src="../../js/plugin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="../../js/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script type="text/javascript" src="../../js/plugin/pagination/pagination.min.js"></script>
+  <script type="text/javascript">
+
+  $("#timeRange1").datetimepicker({
+    minView: "month", //选择日期后，不会再跳转去选择时分秒
+    language:  'zh-CN',
+    format: 'yyyy-mm-dd',
+    todayBtn:  1,
+    autoclose: 1,
+  });
+
+  $("#timeRange2").datetimepicker({
+    minView: "month", //选择日期后，不会再跳转去选择时分秒
+    language:  'zh-CN',
+    format: 'yyyy-mm-dd',
+    todayBtn:  1,
+    autoclose: 1,
+  });
+
+    var replaceReg = /\$\(1\)/g;
+  $(function(){
+    // 生成预览按钮点击事件
+  	$('#btn_preview').click(function() {
+      // 模拟数据 todo
+		   var time = '2017-12-12 12:00:00';
+  		var context = $('#txt_content').val();
+
+      // 设置时间
+  		$('.time').text(time);
+
+  		// 设置内容
+  		$('#txt_content_right').val(context);
+  	});
+
+    $("#storeAddr").click(function(){
+      var test_txt = '门店地址'
+      var context = $('#txt_content').val();
+      var new_context = context.replace('${1}', test_txt);
+  		$('#txt_content').val(new_context);
+    })
+    $("#liveAddr").click(function(){
+      var test_txt = '居住地址'
+      var context = $('#txt_content').val();
+      var new_context = context.replace('${1}', test_txt);
+      $('#txt_content').val(new_context);
+    })
+  })
+  </script>
+</html>
