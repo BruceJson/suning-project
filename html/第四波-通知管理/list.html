@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>标签管理列表页</title>
+		<meta charset="utf-8">
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<!-- pagination -->
+		<link rel="stylesheet" type="text/css" href="../../css/pagination.css">
+		<!-- font -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+		<!-- timeRangePicker -->
+		<link rel="stylesheet" type="text/css" href="../../js/plugin/daterangepicker/daterangepicker.css">
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
+		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	</head>
+
+	<body>
+		<header class='header'>
+			<img src="../../img/1.png" alt="">
+			<p class='header_title'>苏宁智慧运营平台</p>
+		</header>
+		<div class='sidebar'>
+			<div class='avatar_box'>
+				<img src="../../img/2.png" alt="">
+				<p>苏宁</p>
+			</div>
+			<div class='sidebar_list'>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhankuangjiankong transition_3'></i>
+					</p>
+					<p class='name transition_3'>战况监控</p>
+					<div class='active_dot transition_3'></div>
+					<!-- children -->
+					<div class='sidebar_child_list'>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhankuangfenxi transition_3'></i>
+					</p>
+					<p class='name transition_3'>战况分析</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-biaoqianyuntu transition_3'></i>
+					</p>
+					<p class='name transition_3'>标签云图</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-wuqishengji transition_3'></i>
+					</p>
+					<p class='name transition_3'>武器升级</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhihuishi transition_3'></i>
+					</p>
+					<p class='name transition_3'>指挥室</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-tuichu transition_3'></i>
+					</p>
+					<p class='name transition_3'>退出</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+			</div>
+		</div>
+		<div class='body_content'>
+			<div class='body_content_inner'>
+				<!-- 内容 -->
+				<!-- breadcrumbs -->
+				<div class='breadcrumbs clx'>
+					<ul class='bread_list fl'>
+						<li class='bread_item'>指挥室
+							<span class='dot'>|</span>
+						</li>
+						<li class='bread_item'>
+							<a class='name' href="">通知管理</a>
+							<span class='dot'>|</span>
+						</li>
+					</ul>
+					<p class='fr' style='margin-right: 30px;'>
+						<span>现在时间：2018.01.16 星期二 19:00</span>
+					</p>
+				</div>
+				<div class='main_content shopManage_page'>
+					<div class='part2'>
+						<div class='table_top_area clx'>
+							<div class='btn_box fr'>
+								<button id='btn_create_tag'>
+									<i class='fa fa-plus'></i>
+									<span>新增</span>
+								</button>
+							</div>
+						</div>
+						<table id='tag_table' class='suning_table margin_top_10'>
+							<thead>
+								<tr>
+									<th>通知名称</th>
+									<th>通知方式</th>
+									<th>推送人群</th>
+									<th>抄送人群</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>通知名称</td>
+									<td>通知方式</td>
+									<td>推送人群</td>
+									<td>抄送人群</td>
+									<td>
+										<a class='btn_continue_send form_edit_btn margin_right_15' data-toggle="tooltip" data-placement="bottom" title="发送参数设置">
+											<i class='icon iconfont icon-send' style='font-size: 17px;'></i>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- table bottom -->
+						<div class='table_bottom_area clx'>
+							<div class='fl'>
+								<span style='margin-right: 5px;'>每页显示</span>
+								<input style='width: 40px;border:1px solid #ddd;border-radius: 4px;' type="number" name="">
+							</div>
+							<div class='fr'>
+								<div id='pagination-container'></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 新建通知 -->
+		<div id="send_dialog" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document" style='width: 650px;'>
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">新建通知</h4>
+					</div>
+					<div class="modal-body">
+						<div class='form-horizontal'>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label align_right'>
+										<span class='require_dot'>*</span>通知名称：</label>
+								</div>
+								<div class='col-sm-8'>
+									<input class="form-control" type='text' name="">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label align_right'>
+										<span class='require_dot'>*</span>通知时间：</label>
+								</div>
+								<div class='col-sm-4'>
+									<input id='timePicker' class="form-control" type='text' name="">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label'>
+										<span class='require_dot'>*</span>通知方式：</label>
+								</div>
+								<div class='col-sm-8'>
+									<div class="checkbox margin_right_50">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>邮件</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label'>
+										<span class='require_dot'>*</span>通知人群：</label>
+								</div>
+								<div class='col-sm-8'>
+									<div class="checkbox margin_right_50">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>全部</span>
+										</label>
+									</div>
+								</div>
+								<div class='col-sm-4'></div>
+								<div class='col-sm-8'>
+									<div class="checkbox margin_right_30">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>线下管理员</span>
+										</label>
+									</div>
+									<div class="checkbox margin_right_30">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>总经理</span>
+										</label>
+									</div>
+									<div class="checkbox margin_right_30">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>角色名称1</span>
+										</label>
+									</div>
+									<div class="checkbox margin_right_30">
+										<label>
+											<input type="checkbox">
+											<span class='icon_box'>
+												<i class='fa fa-check-square'></i>
+												<i class='fa fa-square-o'></i>
+											</span>
+											<span>角色名称2</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer align_center">
+						<button class='common_btn cancel margin_right_25' data-dismiss="modal">取消</button>
+						<button id='btn_selectModel_ok' class='common_btn commit'>确认</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+		<!-- 发送参数设置弹出框 -->
+		<div id="send_data_setting_dialog" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document" style='width: 650px;'>
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">营销月报</h4>
+					</div>
+					<div class="modal-body">
+						<div class='form-horizontal'>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label align_right'>
+										<span class='require_dot'>*</span>收件：</label>
+								</div>
+								<div class='col-sm-8'>
+									<textarea class="form-control" style='height: 73px;'></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class='col-sm-4 align_right'>
+									<label class='control-label align_right'>
+										<span class='require_dot'>*</span>抄送：</label>
+								</div>
+								<div class='col-sm-8'>
+									<textarea class="form-control" style='height: 73px;'></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer align_center">
+						<button class='common_btn cancel margin_right_25' data-dismiss="modal">取消</button>
+						<button id='btn_selectModel_ok' class='common_btn commit'>确认</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+	</body>
+	<script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='../../js/lib/bootstrap/bootstrap.min.js'></script>
+	<script type="text/javascript" src='../../js/plugin/pagination/pagination.min.js'></script>
+	<!-- moment.js -->
+	<script type="text/javascript" src="../../js/plugin/daterangepicker/moment.min.js"></script>
+	<!-- daterangepicker -->
+	<script type="text/javascript" src="../../js/plugin/daterangepicker/daterangepicker.js"></script>
+	<!-- datetimepicker -->
+	<script type="text/javascript" src="../../js/plugin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../../js/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript">
+	var arr = [];
+	for (var i = 0; i < 100; i++) {
+		arr.push(i);
+	}
+
+	$('#pagination-container').pagination({
+		dataSource: arr,
+		prevText: '上一页',
+		nextText: '下一页',
+		showGoInput: true,
+		showGoButton: true,
+		goButtonText: '确定',
+		formatGoInput: '第 <%= input %> 页',
+		callback: function(data, pagination) {
+			console.log(data);
+		}
+	})
+
+	$('[data-toggle="tooltip"]').tooltip()
+
+	$('#timeRange').daterangepicker({
+		"startDate": "2018-01-01",
+		"endDate": "2018-01-02",
+		"locale": {
+			"format": "YYYY-MM-DD",
+			"separator": " - ",
+			"applyLabel": "确定",
+			"cancelLabel": "取消",
+			"fromLabel": "从",
+			"toLabel": "至",
+			"customRangeLabel": "Custom",
+			"weekLabel": "W",
+			"daysOfWeek": [
+				"日",
+				"一",
+				"二",
+				"三",
+				"四",
+				"五",
+				"六"
+			],
+			"monthNames": [
+				"一月",
+				"二月",
+				"三月",
+				"四月",
+				"五月",
+				"六月",
+				"七月",
+				"八月",
+				"九月",
+				"十月",
+				"十一月",
+				"十二月"
+			],
+			"firstDay": 1
+		},
+	}, function(start, end, label) {
+		console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+	});
+
+	$('#tag_table').on('click', '.btn_continue_send', function() {
+		$('#send_data_setting_dialog').modal('show');
+	});
+
+	$('#btn_create_tag').click(function() {
+		$('#send_dialog').modal('show');
+	});
+
+	$('#timePicker').datetimepicker({
+		format: 'yyyy-mm-dd',
+		autoclose: true,
+		minView: '2',
+		language: 'zh-CN'
+	});
+	</script>
+
+</html>

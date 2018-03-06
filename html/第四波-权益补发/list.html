@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>模板</title>
+		<title>标签管理列表页</title>
 		<meta charset="utf-8">
 		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
@@ -112,15 +112,7 @@
 							<span class='dot'>|</span>
 						</li>
 						<li class='bread_item'>
-							<a class='name' href="">指挥室</a>
-							<span class='dot'>|</span>
-						</li>
-						<li class='bread_item'>
-							<a class='name' href="">指挥室</a>
-							<span class='dot'>|</span>
-						</li>
-						<li class='bread_item'>
-							<a class='name' href="">指挥室</a>
+							<a class='name' href="">权益补发</a>
 							<span class='dot'>|</span>
 						</li>
 					</ul>
@@ -129,86 +121,24 @@
 					</p>
 				</div>
 				<div class='main_content shopManage_page'>
-					<div class='tab_list_1 clx'>
-						<div class='tab_item transition_3 active'>
-							<p>线下营销</p>
-						</div>
-						<div class='tab_item transition_3'>
-							<p>线上营销</p>
-						</div>
-						<div class='tab_item transition_3'>
-							<p>数据营销</p>
-						</div>
-						<div class='tab_item transition_3'>
-							<p>事件审核</p>
-						</div>
-					</div>
-					<form class='part1' style='margin-top: -30px;background-color: #fff;'>
+					<form class='part1' style='background-color: #fff;height: 57px;'>
 						<!-- 左边 -->
 						<div class="form-inline fl" style='width: 85%;'>
 							<div class="fl form-group" style='width: 55%;'>
-								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>活动类型：</label>
-								<div class="checkbox margin_right_20">
-									<label>
-										<input type="checkbox">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>全部</span>
-									</label>
-								</div>
-								<div class="checkbox margin_right_20">
-									<label>
-										<input type="checkbox">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>新店开业</span>
-									</label>
-								</div>
-								<div class="checkbox margin_right_20">
-									<label>
-										<input type="checkbox">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>重装开业</span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox">
-										<span class='icon_box'>
-											<i class='fa fa-check-square'></i>
-											<i class='fa fa-square-o'></i>
-										</span>
-										<span>其他</span>
-									</label>
-								</div>
+								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>返券活动名称：</label>
+								<input type="text" class="form-control" placeholder="请输入返券活动名称" style='width: 60%'>
 							</div>
 							<div class="fl form-group" style='width: 45%;'>
-								<label for="inputPassword3" class="control-label margin_right_20">活动日期：</label>
-								<!-- 下拉框 -->
-								<input class="form-control" id="timeRange" style='width: 72%' type="" name="">
-							</div>
-							<div class="fl form-group" style='width: 55%;'>
-								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>事件状态：</label>
-								<div class="inline_block" style='width: 34%;'>
+								<label for="inputEmail3" class="control-label margin_right_20" style='width: 25%;text-align: right;'>券类型：</label>
+								<div class="inline_block margin_right_10" style='width: 30%;'>
 									<select class="form-control" style='width: 100%;'>
-										<option>请选择活动状态</option>
+										<option>请选择</option>
 										<option>111</option>
 										<option>111</option>
 										<option>111</option>
 										<option>111</option>
 									</select>
 								</div>
-							</div>
-							<div class="fl form-group" style='width: 45%;'>
-								<label for="inputPassword3" class="control-label margin_right_20">事件名称：</label>
-								<input type="text" class="form-control" placeholder="请输入事件名称" style='width: 72%'>
 							</div>
 						</div>
 						<!-- 分割线 -->
@@ -221,50 +151,53 @@
 					</form>
 					<div class='part2'>
 						<div class='table_top_area clx'>
-							<!-- <p class='info'>查询结果：共<span>400</span>条记录</p> -->
+							<p class='info'>查询结果：共<span>400</span>条记录</p>
 							<div class='btn_box fr'>
-								<button>
+								<button id='btn_create_tag'>
 									<i class='fa fa-plus'></i>
-									<span>新增活动</span>
-								</button>
-								<button>
-									<i class='fa fa-download'></i>
-									<span>导出记录</span>
+									<span>新增</span>
 								</button>
 							</div>
 						</div>
-						<table class='suning_table margin_top_10'>
+						<table id='tag_table' class='suning_table margin_top_10'>
 							<thead>
 								<tr>
-									<th>活动类型</th>
-									<th>事件名称</th>
-									<th>活动目的</th>
-									<th>活动日期</th>
-									<th>活动日期</th>
-									<th>事件状态</th>
+									<th>返券活动编号</th>
+									<th>券类型</th>
+									<th>券面额（元）</th>
+									<th>创建时间</th>
+									<th>执行时间</th>
+									<th>发送数量</th>
+									<th>成功数量</th>
 									<th>操作</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>123123</td>
-									<td>上海大区</td>
-									<td>123123</td>
-									<td>上海四川北路店</td>
-									<td>123123</td>
-									<td>上海四川北路店</td>
+									<td>返券活动编号</td>
+									<td>券类型</td>
+									<td>券面额（元）</td>
+									<td>创建时间</td>
+									<td>执行时间</td>
+									<td>发送数量</td>
+									<td>成功数量</td>
 									<td>
-										<a class='form_edit_btn margin_right_15' data-toggle="tooltip" data-placement="bottom" title="编辑">
-											<i class='icon iconfont icon-edit'></i>
+										<a class='btn_continue_send form_edit_btn margin_right_15' data-toggle="tooltip" data-placement="bottom" title="补发">
+											<i class='icon iconfont icon-tianjiayonghu'></i>
 										</a>
-										<a class='form_edit_btn margin_right_15'>
-											<i class='icon iconfont icon-view'></i>
-										</a>
-										<a class='form_edit_btn has_bg margin_right_15'>
-											<i class='icon iconfont icon-stop'></i>
-										</a>
-										<a class='form_edit_btn has_bg'>
-											<i class='icon iconfont icon-delete'></i>
+									</td>
+								</tr>
+								<tr>
+									<td>返券活动编号</td>
+									<td>券类型</td>
+									<td>券面额（元）</td>
+									<td>创建时间</td>
+									<td>执行时间</td>
+									<td>发送数量</td>
+									<td>成功数量</td>
+									<td>
+										<a class='btn_form_edit form_edit_btn margin_right_15'>
+											<i class='icon iconfont icon-dengpao' style='color: #1BC6A0;'></i>
 										</a>
 									</td>
 								</tr>
@@ -284,8 +217,29 @@
 				</div>
 			</div>
 		</div>
+		<!-- 补发弹框 -->
+		<div id="continue_send_dialog" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document" style='width: 650px;'>
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">券补发</h4>
+					</div>
+					<div class="modal-body">
+						<p style='font-size: 28px;color: #3A405B;text-align: center;padding: 50px 0;'>确认补发活动吗？</p>
+					</div>
+					<div class="modal-footer align_center">
+						<button class='common_btn cancel margin_right_25' data-dismiss="modal">取消</button>
+						<button id='btn_selectModel_ok' class='common_btn commit'>确认</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
 		</div>
-		</div>
+		<!-- /.modal -->
 	</body>
 	<script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
 	<script type="text/javascript" src='../../js/lib/bootstrap/bootstrap.min.js'></script>
@@ -356,6 +310,9 @@
 		console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
 	});
 
+	$('#tag_table').on('click', '.btn_continue_send', function() {
+		$('#continue_send_dialog').modal('show');
+	});
 	</script>
 
 </html>
