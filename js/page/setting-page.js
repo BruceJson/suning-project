@@ -66,7 +66,10 @@ function bindEvent() {
 		// 设置内容
 		$('#textArea_model_context_preview').val(context);
 
-		$('.preview_header').css('background-color', '#6666FF');
+		$('.preview_header').css({
+			'background-color': '#6666FF',
+			'color': '#fff'
+		});
 	});
 
 	// 替换字段按钮点击事件
