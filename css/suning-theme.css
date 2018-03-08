@@ -98,6 +98,7 @@
 
 
 
+
 /*checkbox*/
 
 .checkbox {
@@ -157,6 +158,7 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
 
 
 
@@ -239,6 +241,7 @@
 
 
 
+
 /*form-group*/
 
 .require_dot {
@@ -246,6 +249,7 @@
 	font-size: 18px;
 	vertical-align: top;
 }
+
 
 
 
@@ -291,6 +295,7 @@
 
 
 
+
 /*table top*/
 
 .table_top_area {
@@ -323,6 +328,7 @@
 	font-size: 18px;
 	margin-right: 3px;
 }
+
 
 
 
@@ -398,11 +404,13 @@
 
 
 
+
 /*table bottom*/
 
 .table_bottom_area {
 	margin-top: 20px;
 }
+
 
 
 
@@ -429,6 +437,7 @@
 
 
 
+
 /*tooltip*/
 
 .tooltip.bottom .tooltip-arrow {
@@ -440,6 +449,7 @@
 	color: #fff;
 	padding: 9px 25px;
 }
+
 
 
 
@@ -465,6 +475,7 @@
 .btn .caret {
 	margin-left: 15px;
 }
+
 
 
 
@@ -500,4 +511,14 @@
 .modal-footer {
 	padding: 25px;
 	border-top: none;
+}
+
+.form-group .form-control-icon {
+	position: absolute;
+	left: 25px;
+	top: 7px;
+}
+
+.form-group .form-control-icon+input{
+	padding-left: 31px;
 }
