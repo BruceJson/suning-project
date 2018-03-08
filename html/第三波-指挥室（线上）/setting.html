@@ -31,47 +31,71 @@
 			</div>
 			<div class='sidebar_list'>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-zhankuangjiankong transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-zhankuangjiankong transition_3'></i>
+					</p>
 					<p class='name transition_3'>战况监控</p>
 					<div class='active_dot transition_3'></div>
 					<!-- children -->
 					<div class='sidebar_child_list'>
 						<div class='sidebar_child_item'>
-							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
 						</div>
 						<div class='sidebar_child_item'>
-							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
 						</div>
 						<div class='sidebar_child_item'>
-							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
 						</div>
 						<div class='sidebar_child_item'>
-							<p><i class='fa fa-chevron-right'></i><span>全景视图</span></p>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-zhankuangfenxi transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-zhankuangfenxi transition_3'></i>
+					</p>
 					<p class='name transition_3'>战况分析</p>
 					<div class='active_dot transition_3'></div>
 				</div>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-biaoqianyuntu transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-biaoqianyuntu transition_3'></i>
+					</p>
 					<p class='name transition_3'>标签云图</p>
 					<div class='active_dot transition_3'></div>
 				</div>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-wuqishengji transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-wuqishengji transition_3'></i>
+					</p>
 					<p class='name transition_3'>武器升级</p>
 					<div class='active_dot transition_3'></div>
 				</div>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-zhihuishi transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-zhihuishi transition_3'></i>
+					</p>
 					<p class='name transition_3'>指挥室</p>
 					<div class='active_dot transition_3'></div>
 				</div>
 				<div class='sidebar_item transition_3'>
-					<p><i class='icon iconfont icon-tuichu transition_3'></i></p>
+					<p>
+						<i class='icon iconfont icon-tuichu transition_3'></i>
+					</p>
 					<p class='name transition_3'>退出</p>
 					<div class='active_dot transition_3'></div>
 				</div>
@@ -210,7 +234,7 @@
 								<label class="col-sm-3 control-label">
 									<span class='require_dot'>*</span>发送人数:</label>
 								<div class="col-sm-3">
-									<input type="text" class="form-control" placeholder="请输入最大发送人数，不超过10位数" required>
+									<input type="number" oninput="if(this.value.length>10);this.value=this.value.slice(0,10)" class="form-control" placeholder="请输入最大发送人数，不超过10位数" required>
 								</div>
 								<span class='fl' style='margin-top: 7px;margin-right: 60px;'>人</span>
 								<button id='guess_person_num' class='fl common_btn' style='margin-top: 2px;background-color: #8093FF;'>预估人数</button>
