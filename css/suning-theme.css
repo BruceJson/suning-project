@@ -1,3 +1,13 @@
+/*color*/
+
+.color_blue {
+	color: #6666FF;
+}
+
+
+
+
+
 /*button*/
 
 .common_btn {
@@ -99,6 +109,10 @@
 
 
 
+
+
+
+
 /*checkbox*/
 
 .checkbox {
@@ -158,6 +172,10 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+
+
+
 
 
 
@@ -242,6 +260,10 @@
 
 
 
+
+
+
+
 /*form-group*/
 
 .require_dot {
@@ -249,6 +271,10 @@
 	font-size: 18px;
 	vertical-align: top;
 }
+
+
+
+
 
 
 
@@ -282,6 +308,10 @@
 	border-radius: 4px;
 	width: 100%;
 }
+
+
+
+
 
 
 
@@ -330,7 +360,48 @@
 }
 
 
+/*table_top_tab*/
+.table_top_tab {
+	height: 35px;
+	border-top: 3px solid #8093FF;
+	line-height: 32px;
+	text-align: center;
+	position: relative;
+}
 
+.table_top_tab .arrow_left,
+.table_top_tab .arrow_right {
+	cursor: pointer;
+	display: block;
+	width: 32px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 4px;
+	position: absolute;
+	color: #6666FF;
+}
+
+.table_top_tab .arrow_left:hover,
+.table_top_tab .arrow_right:hover {
+	background-color: #6666FF;
+	color: #fff;
+}
+
+.table_top_tab .arrow_left {
+	left: 10%;
+	top: 3px;
+}
+
+.table_top_tab .arrow_right {
+	top: 3px;
+	right: 10%;
+}
+
+.table_top_tab .arrow_left i,
+.table_top_tab .arrow_right i {
+	font-size: 23px;
+}
 
 
 
@@ -392,6 +463,41 @@
 	background-color: #F8FAFB;
 }
 
+.suning_table_1 {
+	border-color: #E4E4E4 !important;
+}
+
+.suning_table_1 tr td {
+	border-color: #E4E4E4 !important;
+}
+
+.suning_table_1 tr td:nth-child(1) {
+	background-color: #F7F7F7;
+}
+
+.suning_table_2 tr td {
+	border-right-color: transparent !important;
+}
+.suning_table_2 tr th,
+.suning_table_2 tr td{
+	height: 35px !important;
+}
+
+.suning_table_2 tr th{
+	font-size: 13px;
+}
+
+.suning_table_2 tr td{
+	font-size: 12px;
+}
+
+.suning_table_2 tr td:nth-child(1){
+	font-weight: bold;
+	color: #000;
+}
+
+
+
 
 
 
@@ -420,6 +526,10 @@
 
 
 
+
+
+
+
 /*subtitle*/
 
 .suning_subtitle {
@@ -430,6 +540,16 @@
 	padding-left: 49px;
 	font-size: 15px;
 }
+
+
+.suning_subtitle_1 {
+	height: 58px;
+	border: 1px solid #D9E2EC;
+	line-height: 56px;
+	text-align: center;
+	font-size: 15px;
+}
+
 
 
 
@@ -449,6 +569,10 @@
 	color: #fff;
 	padding: 9px 25px;
 }
+
+
+
+
 
 
 
@@ -475,6 +599,10 @@
 .btn .caret {
 	margin-left: 15px;
 }
+
+
+
+
 
 
 
@@ -519,6 +647,6 @@
 	top: 7px;
 }
 
-.form-group .form-control-icon+input{
+.form-group .form-control-icon+input {
 	padding-left: 31px;
 }

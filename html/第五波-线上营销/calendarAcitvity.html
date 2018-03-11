@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>模板</title>
+		<meta charset="utf-8">
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<!-- font -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+		<!-- fullcalendar -->
+		<link rel="stylesheet" type="text/css" href="../../fonts/iconfont/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../../js/plugin/bower_components/fullcalendar/dist/fullcalendar.min.css">
+		<link rel="stylesheet" type="text/css" href="../../js/plugin/bower_components/fullcalendar/dist/fullcalendar.print.min.css">
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suning-theme.css">
+		<link rel="stylesheet" type="text/css" href="../../css/frame.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	</head>
+
+	<body>
+		<header class='header'>
+			<img src="../../img/1.png" alt="">
+			<p class='header_title'>苏宁智慧运营平台</p>
+		</header>
+		<div class='sidebar'>
+			<div class='avatar_box'>
+				<img src="../../img/2.png" alt="">
+				<p>苏宁</p>
+			</div>
+			<div class='sidebar_list'>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhankuangjiankong transition_3'></i>
+					</p>
+					<p class='name transition_3'>战况监控</p>
+					<div class='active_dot transition_3'></div>
+					<!-- children -->
+					<div class='sidebar_child_list'>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+						<div class='sidebar_child_item'>
+							<p>
+								<i class='fa fa-chevron-right'></i>
+								<span>全景视图</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhankuangfenxi transition_3'></i>
+					</p>
+					<p class='name transition_3'>战况分析</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-biaoqianyuntu transition_3'></i>
+					</p>
+					<p class='name transition_3'>标签云图</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-wuqishengji transition_3'></i>
+					</p>
+					<p class='name transition_3'>武器升级</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-zhihuishi transition_3'></i>
+					</p>
+					<p class='name transition_3'>指挥室</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+				<div class='sidebar_item transition_3'>
+					<p>
+						<i class='icon iconfont icon-tuichu transition_3'></i>
+					</p>
+					<p class='name transition_3'>退出</p>
+					<div class='active_dot transition_3'></div>
+				</div>
+			</div>
+		</div>
+		<div class='body_content'>
+			<div class='body_content_inner'>
+				<!-- 内容 -->
+				<!-- breadcrumbs -->
+				<div class='breadcrumbs clx'>
+					<ul class='bread_list fl'>
+						<li class='bread_item'>指挥室
+							<span class='dot'>|</span>
+						</li>
+						<li class='bread_item'>
+							<a class='name' href="">指挥室</a>
+							<span class='dot'>|</span>
+						</li>
+						<li class='bread_item'>
+							<a class='name' href="">指挥室</a>
+							<span class='dot'>|</span>
+						</li>
+						<li class='bread_item'>
+							<a class='name' href="">指挥室</a>
+							<span class='dot'>|</span>
+						</li>
+					</ul>
+					<p class='fr' style='margin-right: 30px;'>
+						<span>现在时间：2018.01.16 星期二 19:00</span>
+					</p>
+				</div>
+				<div class='main_content' style='padding: 15px 12px;'>
+					<!-- 内容 -->
+					<div id='calendar'>
+						<span class='month_pre'>
+							<i class='iconfont icon-jiantou-copy'></i>
+						</span>
+						<span class='month_next'>
+							<i class='iconfont icon-jiantou'></i>
+						</span>
+					</div>
+					<div class='calendar_activity_table_list clx' style='margin-top: 12px;'>
+						<div class='left_table_box fl' style='width: 49.5%;'>
+							<div class='table_top_tab'>
+								<p>活动明细</p>
+								<span class='arrow_left'>
+									<i class='iconfont icon-jiantou23'></i>
+								</span>
+								<span class='arrow_right'>
+									<i class='iconfont icon-jiantou24'></i>
+								</span>
+							</div>
+							<table class='suning_table suning_table_2'>
+								<thead>
+									<tr>
+										<th>活动名称</th>
+										<th>营销人数</th>
+										<th>申请人数</th>
+										<th>贷款人数</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img class='vertical_middle margin_right_10' src="../../img/10.png" alt="">
+											<span class='vertical_middle'>工号</span>
+										</td>
+										<td>姓名</td>
+										<td>联系电话</td>
+										<td>电子邮件</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class='right_table_box fr' style='width: 49.5%;'>
+							<div class='table_top_tab'>
+								<p>事件明细</p>
+								<span class='arrow_left'>
+									<i class='iconfont icon-jiantou23'></i>
+								</span>
+								<span class='arrow_right'>
+									<i class='iconfont icon-jiantou24'></i>
+								</span>
+							</div>
+							<table class='suning_table suning_table_2'>
+								<thead>
+									<tr>
+										<th>活动名称</th>
+										<th>营销人数</th>
+										<th>申请人数</th>
+										<th>贷款人数</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img class='vertical_middle margin_right_10' src="../../img/10.png" alt="">
+											<span class='vertical_middle'>工号</span>
+										</td>
+										<td>姓名</td>
+										<td>联系电话</td>
+										<td>电子邮件</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src='../../js/plugin/fullcalendar-1.6.4/lib/jquery.min.js'></script>
+	<script src='../../js/plugin/bower_components/moment/moment.js'></script>
+	<script src='../../js/plugin/fullcalendar-1.6.4/lib/jquery-ui.custom.min.js'></script>
+	<script src='../../js/plugin/fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js'></script>
+	<script>
+	window.onload = function() {
+		var eventsList = {
+			'2018-03-01': {
+				activityList: [{
+					title: '小家电促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+					hot: '1'
+				}, {
+					title: '笔记本促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+				}, {
+					title: '冰箱促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+				}, {
+					title: '电脑促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+				}, {
+					title: '灯具促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+				}, {
+					title: '手机促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+				}]
+			},
+			'2018-03-02': {
+				activityList: [{
+					title: '小家电促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+					hot: '1'
+				}]
+			},
+			'2018-03-03': {
+				activityList: [{
+					title: '小家电促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+					hot: '1'
+				}]
+			},
+			'2018-03-04': {
+				activityList: [{
+					title: '小家电促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+					hot: '1'
+				}]
+			},
+			'2018-03-05': {
+				activityList: [{
+					title: '小家电促销',
+					activityGoalList: ['促开通'],
+					activityTypeList: ['生活场景', '体育'],
+					time: '2018.01.05-2018.05.05',
+					desc: '活动介绍',
+					hot: '1'
+				}]
+			}
+		};
+
+		var listBoxList = [];
+
+		function getPosition(el) {
+			var parentNode = el.parentNode;
+			if (parentNode.nodeName === 'BODY') {
+				return {
+					x: el.offsetLeft,
+					y: el.offsetTop
+				};
+			} else {
+				parentPosition = getPosition(parentNode);
+				console.log('parentPosition:', parentPosition, 'parentNode:', parentNode);
+				return {
+					x: el.offsetLeft + parentPosition.x,
+					y: el.offsetTop + parentPosition.y
+				};
+			}
+		}
+
+		$('#calendar').fullCalendar({
+			defaultView: 'month',
+			contentHeight: '94',
+			views: {
+				month: {
+					titleFormat: 'MM YYYY'
+				}
+			},
+			dayRender: function(date, cell) {
+				console.log('=======dayRender', '###date', moment(date).format('YYYY-MM-DD'), '###cell', cell);
+
+
+				var dateStr = moment(date).format('YYYY-MM-DD');
+				var $listBox = cell.find('.fc-day-content');
+				// var obj = {
+				// 	date: dateStr,
+				// 	$dom: $listBox
+				// };
+				// listBoxList.push(obj);
+
+				var list = eventsList[dateStr] && eventsList[dateStr].activityList || [];
+				if (list.length > 0) {
+					// alert(1);
+					var items = packAcitivityList(list);
+					$listBox.append($('<div class="acitivity_list"></div>').append($(items)));
+
+					if (list.length > 2) {
+						var show_more = '<p class="see_more">+6查看更多</p>';
+						$listBox.append($(show_more))
+
+						$listBox.on('click', '.see_more', function(e) {
+							e.stopPropagation();
+							$(this).parent().find('.acitivity_list').addClass('see_all');
+						});
+					}
+
+				}
+			}
+		});
+
+		$('#calendar').click(function() {
+			$(this).find('.acitivity_list').removeClass('see_all');
+		});
+
+		$('#calendar').on('click', '.acitivity_list', function(e) {
+			e.stopPropagation();
+		});
+
+		$('#calendar').on('click', '.event_item', function(e) {
+			e.stopPropagation();
+			$('#calendar').find('.event_pop_box').hide();
+			$(this).find('.event_pop_box').show();
+		});
+
+		$('#calendar').on('click', '.event_item .popup_close', function(e) {
+			e.stopPropagation();
+			$(this).parents('.event_pop_box').hide();
+		});
+
+		$('#calendar').on('click', '.month_pre', function(e) {
+			e.stopPropagation();
+			$('#calendar').fullCalendar('prev')
+		});
+
+		$('#calendar').on('click', '.month_next', function(e) {
+			e.stopPropagation();
+			$('#calendar').fullCalendar('next')
+		});
+
+		var calendar = $('#calendar').fullCalendar('getCalendar');
+
+		function packAcitivityList(list) {
+			var items = '';
+			for (var i = 0; i < list.length; i++) {
+				var obj = list[i];
+				var itemStr = packActivityItem(obj);
+				items += itemStr;
+			}
+			return items;
+		}
+
+		function packActivityItem(obj) {
+			var item = "<div class='event_item " + (obj.hot === '1' ? 'hot' : '') + "'>" +
+				"<div class='event_item_inner'>" +
+				"<span style='cursor: pointer;'>小家电促销</span>" +
+				"<div class='event_pop_box'>" +
+				"<div class='part1'>" +
+				"<span>小型家电促销活动</span>" +
+				"<div class='dot'></div>" +
+				"<span class='popup_close'>" +
+				"<i class='iconfont icon-error'></i>" +
+				"</span>" +
+				"</div>" +
+				"<div class='part2'>" +
+				"<p class='margin_bottom_15'>活动目的：</p>" +
+				"<div class='list1 clx' style='padding: 0 13px;'>" +
+				"<div class='item'>促开通</div>" +
+				"<div class='item'>促开通</div>" +
+				"</div>" +
+				"<p class='margin_bottom_15'>活动类型：</p>" +
+				"<div class='list2 clx' style='padding: 0 13px;'>" +
+				"<div class='item'>生活场景</div>" +
+				"<div class='item'>体育</div>" +
+				"</div>" +
+				"<p class='margin_bottom_15'>活动时间：</p>" +
+				"<p class='margin_bottom_15' style='font-size: 13px;color: #5272F5;font-weight: bold;padding: 0 13px;'>2018.12.12-2018.12.15</p>" +
+				"<p class='margin_bottom_15'>活动介绍：</p>" +
+				"<div style='padding: 0 13px;'>" +
+				"<textarea class='width_full' style='background-color: #F1F5FD;border: 1px solid #EEF1F7;border-radius: 4px;height: 70px;font-size: 12px;'>字段字段字段字段字段字段字段字段字段字段字段字段字段字段字段字段字段字段</textarea>" +
+				"</div>" +
+				"<a class='go_setting'>" +
+				"<span class='vertical_middle'>配置事件</span>" +
+				"<i class='iconfont icon-jiantou24'></i>" +
+				"</a>" +
+				"</div>" +
+				"</div>" +
+				"</div>" +
+				"</div>";
+			return item;
+		}
+
+
+
+	}
+	</script>
+
+</html>
