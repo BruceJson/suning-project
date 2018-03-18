@@ -32,6 +32,10 @@
 	top: 0;
 }
 
+.shopManage_page .part1_1 {
+	margin: 10px 0;
+}
+
 .shopManage_page .part2 {
 	padding: 10px;
 }
@@ -583,6 +587,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /*fullcalendar */
 
 #calendar {
@@ -652,6 +665,7 @@
 	z-index: 10;
 	display: none;
 }
+
 #calendar tr td:nth-last-child(1) .fc-day-content .event_item .event_item_inner .event_pop_box,
 #calendar tr td:nth-last-child(2) .fc-day-content .event_item .event_item_inner .event_pop_box {
 	left: 0;
@@ -808,6 +822,187 @@
 	cursor: pointer;
 }
 
-#calendar .fc-other-month{
+#calendar .fc-other-month {
 	background-color: #EEF0F8 !important;
+}
+
+.marketing_info_list .marketing_info_item1 {
+	position: relative;
+	height: 122px;
+	border-radius: 4px;
+	background-color: #fff;
+	margin-right: 10px;
+	float: left;
+	width: calc(22% - 60px);
+	width: -webkit-calc(22% - 60px);
+	width: -moz-calc(22% - 60px);
+	width: -ms-calc(22% - 60px);
+	width: -o-calc(22% - 60px);
+	background-image: url('../img/11.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.marketing_info_list .marketing_info_item1 img {
+	position: absolute;
+	right: 20px;
+	top: 7px;
+}
+
+.marketing_info_list .marketing_info_item1 .p1 {
+	height: 32px;
+	color: #fff;
+	font-size: 16px;
+	border-bottom: 1px solid #fff;
+	padding-left: 27px;
+	padding-top: 4px;
+}
+
+.marketing_info_list .marketing_info_item1 .p2 {
+	font-size: 28px;
+	color: #fff;
+	padding-left: 27px;
+	margin-top: 20px;
+}
+
+.marketing_info_list .marketing_info_item1 .p3 {
+	font-size: 14px;
+	color: #fff;
+	padding-left: 27px;
+	margin-top: 5px;
+}
+
+.marketing_info_list .marketing_info_item {
+	height: 122px;
+	border-radius: 4px;
+	background-color: #fff;
+	width: 13%;
+	margin-right: 10px;
+	float: left;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.marketing_info_list .marketing_info_item:nth-last-child(1) {
+	margin-right: 0;
+}
+
+.marketing_info_list .marketing_info_item .p1 {
+	padding-left: 20px;
+	color: #3D4D65;
+	font-size: 15px;
+	margin-top: 25px;
+}
+
+.marketing_info_list .marketing_info_item .p2 {
+	padding-left: 20px;
+	color: #3D4D65;
+	font-size: 15px;
+	margin-top: 22px;
+}
+
+.marketing_info_list .marketing_info_item:hover .p1,
+.marketing_info_list .marketing_info_item:hover .p2 {
+	color: #6666FF;
+}
+
+.tag_yuntu_page {
+	position: relative;
+	height: calc(100% - 50px);
+	height: -webkit-calc(100% - 50px);
+	height: -moz-calc(100% - 50px);
+	height: -ms-calc(100% - 50px);
+	height: -o-calc(100% - 50px);
+}
+
+.tag_yuntu_page .part2 {
+	height: calc(100% - 85px);
+	height: -webkit-calc(100% - 85px);
+	height: -moz-calc(100% - 85px);
+	height: -ms-calc(100% - 85px);
+	height: -o-calc(100% - 85px);
+}
+
+.tag_yuntu_page .part2 .left_part{
+	position: relative;
+	height: 100%;
+	width: 74%;
+	margin-right: 1%;
+	float: left;
+}
+.tag_yuntu_page .part2 .left_part .table_bottom_area {
+	border: 1px solid #f2f2f2;
+	margin-top: 0;
+	padding: 0 25px;
+	height: 60px;
+	padding-top: 14px;
+	border-top: none;
+}
+
+.tag_yuntu_page .part2 .left_part table td.setting_td{
+	color: #0052FE;
+}
+
+.tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn,
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn{
+	cursor: pointer;
+}
+
+.tag_yuntu_page .part2 .right_part{
+	position: relative;
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+
+.tag_yuntu_page .part2 .right_part .table_area{
+	position: relative;
+	height: 42%;
+}
+
+.tag_yuntu_page .part2 .right_part .table_area .list{
+	position: relative;
+	height: calc(100% - 50px);
+	height: -webkit-calc(100% - 50px);
+	height: -moz-calc(100% - 50px);
+	height: -ms-calc(100% - 50px);
+	height: -o-calc(100% - 50px);
+	border: 1px solid #f2f2f2;
+	border-top: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.tag_yuntu_page .part2 .right_part .table_area .list table{
+	border: none !important;
+}
+
+.tag_yuntu_page .part2 .right_part .table_area .list table td{
+	border-right: none !important;
+
+}
+
+.logoutpage_subtitle{
+	height: 32px;
+	line-height: 29px;
+	padding-left: 50px;
+	border: 1px solid #C5D0DE;
+	font-size: 15px;
+	color: #515D7D;
+}
+
+.logout_edit_page .upload_file_box{
+	height: 285px;
+	background-color: #fff;
+	border: 1px solid #C5D0DE;
+	border-top: none;
+}
+
+.logout_edit_page .upload_file_box .import-container {
+	padding-left: 30%;
+}
+
+.logout_edit_page .select_type_box{
+	
 }

@@ -8,6 +8,7 @@
 
 
 
+
 /*button*/
 
 .common_btn {
@@ -113,6 +114,7 @@
 
 
 
+
 /*checkbox*/
 
 .checkbox {
@@ -172,6 +174,7 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
 
 
 
@@ -264,6 +267,7 @@
 
 
 
+
 /*form-group*/
 
 .require_dot {
@@ -271,6 +275,7 @@
 	font-size: 18px;
 	vertical-align: top;
 }
+
 
 
 
@@ -326,6 +331,7 @@
 
 
 
+
 /*table top*/
 
 .table_top_area {
@@ -359,8 +365,15 @@
 	margin-right: 3px;
 }
 
+.table_top_area .btn_box button.disabled{
+	color: #8B9BC7;
+	background-color: #DFE3E9;
+}
+
+
 
 /*table_top_tab*/
+
 .table_top_tab {
 	height: 35px;
 	border-top: 3px solid #8093FF;
@@ -402,6 +415,7 @@
 .table_top_tab .arrow_right i {
 	font-size: 23px;
 }
+
 
 
 
@@ -478,23 +492,25 @@
 .suning_table_2 tr td {
 	border-right-color: transparent !important;
 }
+
 .suning_table_2 tr th,
-.suning_table_2 tr td{
+.suning_table_2 tr td {
 	height: 35px !important;
 }
 
-.suning_table_2 tr th{
+.suning_table_2 tr th {
 	font-size: 13px;
 }
 
-.suning_table_2 tr td{
+.suning_table_2 tr td {
 	font-size: 12px;
 }
 
-.suning_table_2 tr td:nth-child(1){
+.suning_table_2 tr td:nth-child(1) {
 	font-weight: bold;
 	color: #000;
 }
+
 
 
 
@@ -516,6 +532,7 @@
 .table_bottom_area {
 	margin-top: 20px;
 }
+
 
 
 
@@ -558,6 +575,7 @@
 
 
 
+
 /*tooltip*/
 
 .tooltip.bottom .tooltip-arrow {
@@ -570,6 +588,18 @@
 	padding: 9px 25px;
 }
 
+.marketing_info_item1+.tooltip .tooltip-inner,
+.marketing_info_item+.tooltip .tooltip-inner {
+	background-color: #fff;
+	color: #3F4F67;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	max-width: 230px;
+}
+
+.marketing_info_item1+.tooltip .tooltip-arrow,
+.marketing_info_item+.tooltip .tooltip-arrow {
+	border-bottom-color: #fff;
+}
 
 
 
@@ -599,6 +629,7 @@
 .btn .caret {
 	margin-left: 15px;
 }
+
 
 
 

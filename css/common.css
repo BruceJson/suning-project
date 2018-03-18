@@ -172,7 +172,7 @@ textarea{padding: 10px;resize:none;}
 .margin_bottom_4{margin-bottom: 4px;}
 .margin_bottom_5{margin-bottom: 5px;}
 .margin_bottom_10{margin-bottom: 10px;}
-.margin_bottom_15{margin-bottom: 15px;}
+.margin_bottom_15{margin-bottom: 15px !important;;}
 .margin_bottom_20{margin-bottom: 20px;}
 .margin_bottom_30{margin-bottom: 30px;}
 .margin_bottom_50{margin-bottom: 50px;}
