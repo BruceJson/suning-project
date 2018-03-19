@@ -949,6 +949,26 @@
 	cursor: pointer;
 }
 
+.tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.ok .state_ok,
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_ok{
+	display: inline-block;
+}
+
+.tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.ok .state_cancel,
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_cancel{
+	display: none;
+}
+
+.tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.cancel .state_ok,
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_ok{
+	display: none;
+}
+
+.tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.cancel .state_cancel,
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_cancel{
+	display: inline-block;
+}
+
 .tag_yuntu_page .part2 .right_part{
 	position: relative;
 	height: 100%;

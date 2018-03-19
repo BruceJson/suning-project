@@ -205,15 +205,85 @@
 										<th>操作</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
+								<tbody id='setting_list'>
+									<tr index='0'>
 										<td>123123</td>
 										<td>上海大区</td>
 										<td>123123</td>
 										<td class='setting_td'>
-											<span class='type_setting_btn'>设为条件</span>
+											<span class='type_setting_btn ok'>
+												<span class='state_ok'>设为条件</span>
+												<span class='state_cancel'>取消设为条件</span>
+											</span>
 											<span style='color: #D8D8D8;margin: 0 30px'>|</span>
-											<span class='word_setting_btn'>设为展示字段</span>
+											<span class='word_setting_btn ok'>
+												<span class='state_ok'>设为展示字段</span>
+												<span class='state_cancel'>取消设为展示字段</span>
+											</span>
+										</td>
+									</tr>
+									<tr index='1'>
+										<td>123123</td>
+										<td>上海大区</td>
+										<td>123123</td>
+										<td class='setting_td'>
+											<span class='type_setting_btn ok'>
+												<span class='state_ok'>设为条件</span>
+												<span class='state_cancel'>取消设为条件</span>
+											</span>
+											<span style='color: #D8D8D8;margin: 0 30px'>|</span>
+											<span class='word_setting_btn ok'>
+												<span class='state_ok'>设为展示字段</span>
+												<span class='state_cancel'>取消设为展示字段</span>
+											</span>
+										</td>
+									</tr>
+									<tr index='2'>
+										<td>123123</td>
+										<td>上海大区</td>
+										<td>123123</td>
+										<td class='setting_td'>
+											<span class='type_setting_btn ok'>
+												<span class='state_ok'>设为条件</span>
+												<span class='state_cancel'>取消设为条件</span>
+											</span>
+											<span style='color: #D8D8D8;margin: 0 30px'>|</span>
+											<span class='word_setting_btn ok'>
+												<span class='state_ok'>设为展示字段</span>
+												<span class='state_cancel'>取消设为展示字段</span>
+											</span>
+										</td>
+									</tr>
+									<tr index='3'>
+										<td>123123</td>
+										<td>上海大区</td>
+										<td>123123</td>
+										<td class='setting_td'>
+											<span class='type_setting_btn ok'>
+												<span class='state_ok'>设为条件</span>
+												<span class='state_cancel'>取消设为条件</span>
+											</span>
+											<span style='color: #D8D8D8;margin: 0 30px'>|</span>
+											<span class='word_setting_btn ok'>
+												<span class='state_ok'>设为展示字段</span>
+												<span class='state_cancel'>取消设为展示字段</span>
+											</span>
+										</td>
+									</tr>
+									<tr index='4'>
+										<td>123123</td>
+										<td>上海大区</td>
+										<td>123123</td>
+										<td class='setting_td'>
+											<span class='type_setting_btn ok'>
+												<span class='state_ok'>设为条件</span>
+												<span class='state_cancel'>取消设为条件</span>
+											</span>
+											<span style='color: #D8D8D8;margin: 0 30px'>|</span>
+											<span class='word_setting_btn ok'>
+												<span class='state_ok'>设为展示字段</span>
+												<span class='state_cancel'>取消设为展示字段</span>
+											</span>
 										</td>
 									</tr>
 								</tbody>
@@ -234,61 +304,21 @@
 								<table class='suning_table'>
 									<thead>
 										<tr>
-											<th colspan="2" style='text-align: left;padding-left: 55px;'>活动类型</th>
+											<th colspan="2" style='text-align: left;padding-left: 55px;'>筛选条件</th>
 										</tr>
 									</thead>
 								</table>
 								<div class='list'>
 									<table class='suning_table'>
-										<tbody>
-											<tr>
+										<tbody id='type_list'>
+											<!-- <tr>
 												<td>123123</td>
 												<td>
 													<a class='form_edit_btn'>
 														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
-												<td>123123</td>
-												<td>
-													<a class='form_edit_btn'>
-														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>123123</td>
-												<td>
-													<a class='form_edit_btn'>
-														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>123123</td>
-												<td>
-													<a class='form_edit_btn'>
-														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>123123</td>
-												<td>
-													<a class='form_edit_btn'>
-														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>123123</td>
-												<td>
-													<a class='form_edit_btn'>
-														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
-													</a>
-												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>
 								</div>
@@ -297,21 +327,21 @@
 								<table class='suning_table'>
 									<thead>
 										<tr>
-											<th colspan="2" style='text-align: left;padding-left: 55px;'>活动类型</th>
+											<th colspan="2" style='text-align: left;padding-left: 55px;'>展示字段</th>
 										</tr>
 									</thead>
 								</table>
 								<div class='list'>
 									<table class='suning_table'>
-										<tbody>
-											<tr>
+										<tbody id='word_list'>
+											<!-- <tr>
 												<td>123123</td>
 												<td>
 													<a class='form_edit_btn'>
 														<i class='icon iconfont icon-delete' data-toggle="tooltip" data-placement="bottom" title="删除"></i>
 													</a>
 												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>
 								</div>
@@ -404,6 +434,59 @@
 		},
 	}, function(start, end, label) {
 		console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+	});
+
+	var $settingList = $('#setting_list');
+	var $typeList = $('#type_list');
+	var $wordList = $('#word_list');
+
+	// 条件设置
+	$('.type_setting_btn').click(function() {
+
+		var index = $(this).parents('tr').eq(0).attr('index');
+		if ($(this).hasClass('ok')) {
+			$(this).removeClass('ok');
+			$(this).addClass('cancel');
+
+			$typeList.append($("<tr index='" + index + "'><td>123123</td><td><a class='form_edit_btn'><i class='icon iconfont icon-delete' data-toggle='tooltip' data-placement='bottom' title='删除'></i></a></td></tr>"));
+		} else {
+			$(this).removeClass('cancel');
+			$(this).addClass('ok');
+
+			$typeList.find("tr[index='" + index + "']").remove();
+		}
+	});
+
+	// 字段设置
+	$('.word_setting_btn').click(function() {
+		var index = $(this).parents('tr').eq(0).attr('index');
+		if ($(this).hasClass('ok')) {
+			$(this).removeClass('ok');
+			$(this).addClass('cancel');
+
+			$wordList.append($("<tr index='" + index + "'><td>123123</td><td><a class='form_edit_btn'><i class='icon iconfont icon-delete' data-toggle='tooltip' data-placement='bottom' title='删除'></i></a></td></tr>"));
+		} else {
+			$(this).removeClass('cancel');
+			$(this).addClass('ok');
+
+			$wordList.find("tr[index='" + index + "']").remove();
+		}
+	});
+	$typeList.on('click', '.form_edit_btn', function() {
+		var $tr = $(this).parents('tr').eq(0);
+		var index = $tr.attr('index');
+
+		$tr.remove();
+
+		$settingList.find("tr[index='" + index + "']").find('.type_setting_btn').removeClass('cancel').addClass('ok');
+	});
+	$wordList.on('click', '.form_edit_btn', function() {
+		var $tr = $(this).parents('tr').eq(0);
+		var index = $tr.attr('index');
+
+		$tr.remove();
+
+		$settingList.find("tr[index='" + index + "']").find('.word_setting_btn').removeClass('cancel').addClass('ok');
 	});
 	</script>
 
