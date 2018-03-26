@@ -596,6 +596,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*fullcalendar */
 
 #calendar {
@@ -924,13 +934,14 @@
 	height: -o-calc(100% - 85px);
 }
 
-.tag_yuntu_page .part2 .left_part{
+.tag_yuntu_page .part2 .left_part {
 	position: relative;
 	height: 100%;
 	width: 74%;
 	margin-right: 1%;
 	float: left;
 }
+
 .tag_yuntu_page .part2 .left_part .table_bottom_area {
 	border: 1px solid #f2f2f2;
 	margin-top: 0;
@@ -940,48 +951,48 @@
 	border-top: none;
 }
 
-.tag_yuntu_page .part2 .left_part table td.setting_td{
+.tag_yuntu_page .part2 .left_part table td.setting_td {
 	color: #0052FE;
 }
 
 .tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn,
-.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn{
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn {
 	cursor: pointer;
 }
 
 .tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.ok .state_ok,
-.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_ok{
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_ok {
 	display: inline-block;
 }
 
 .tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.ok .state_cancel,
-.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_cancel{
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.ok .state_cancel {
 	display: none;
 }
 
 .tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.cancel .state_ok,
-.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_ok{
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_ok {
 	display: none;
 }
 
 .tag_yuntu_page .part2 .left_part table td.setting_td .type_setting_btn.cancel .state_cancel,
-.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_cancel{
+.tag_yuntu_page .part2 .left_part table td.setting_td .word_setting_btn.cancel .state_cancel {
 	display: inline-block;
 }
 
-.tag_yuntu_page .part2 .right_part{
+.tag_yuntu_page .part2 .right_part {
 	position: relative;
 	height: 100%;
 	width: 25%;
 	float: left;
 }
 
-.tag_yuntu_page .part2 .right_part .table_area{
+.tag_yuntu_page .part2 .right_part .table_area {
 	position: relative;
 	height: 44.7%;
 }
 
-.tag_yuntu_page .part2 .right_part .table_area .list{
+.tag_yuntu_page .part2 .right_part .table_area .list {
 	position: relative;
 	height: calc(100% - 50px);
 	height: -webkit-calc(100% - 50px);
@@ -994,16 +1005,15 @@
 	overflow-y: auto;
 }
 
-.tag_yuntu_page .part2 .right_part .table_area .list table{
+.tag_yuntu_page .part2 .right_part .table_area .list table {
 	border: none !important;
 }
 
-.tag_yuntu_page .part2 .right_part .table_area .list table td{
+.tag_yuntu_page .part2 .right_part .table_area .list table td {
 	border-right: none !important;
-
 }
 
-.logoutpage_subtitle{
+.logoutpage_subtitle {
 	height: 32px;
 	line-height: 29px;
 	padding-left: 50px;
@@ -1012,7 +1022,7 @@
 	color: #515D7D;
 }
 
-.logout_edit_page .upload_file_box{
+.logout_edit_page .upload_file_box {
 	height: 285px;
 	background-color: #fff;
 	border: 1px solid #C5D0DE;
@@ -1023,6 +1033,183 @@
 	padding-left: 30%;
 }
 
-.logout_edit_page .select_type_box{
-	
+.logout_edit_page .select_type_box {}
+
+.body_content.full {
+	height: 100%;
+}
+
+.body_content.full .body_content_inner {
+	height: 100%;
+}
+
+.body_content.full .main_content {
+	position: relative;
+	height: calc(100% - 50px);
+	height: -webkit-calc(100% - 50px);
+	height: -moz-calc(100% - 50px);
+	height: -ms-calc(100% - 50px);
+	height: -o-calc(100% - 50px);
+}
+
+.search_box {
+	background-image: url(../img/19.png);
+	background-position: center 100px;
+	background-repeat: no-repeat;
+}
+
+.personal_portrait_page .left {
+	width: 33%;
+	float: left;
+}
+
+.personal_portrait_page .right {
+	width: 66%;
+	float: right;
+}
+
+.personal_portrait_page .part {
+	background-color: #fff;
+}
+
+.personal_portrait_page .right .part {
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+
+.personal_portrait_page .right .top .part1 {
+	height: 45px;
+	border-bottom: 1px solid #8C97B2;
+	line-height: 43px;
+	padding-left: 40px;
+}
+
+.personal_portrait_page .right .top .part2 {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.personal_portrait_page .right .bottom .form-group {
+	margin-bottom: 20px;
+}
+
+.personal_portrait_page .right .bottom .form-control {
+	border: none;
+	border-bottom: 1px dashed #8C97B2;
+	box-shadow: none;
+}
+
+.personal_portrait_page .right .bottom .form-control:focus {
+	box-shadow: none;
+}
+
+.group_portrait_table {
+	width: 100%;
+	border: 1px solid #C5D0DE;
+}
+
+.group_portrait_table td .select_item {
+	padding: 5px 15px;
+	border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.group_portrait_table td .select_item.active {
+	background-color: #C5D0DE;
+}
+
+.group_portrait_table td .select_item:hover {
+	color: #6666FF;
+}
+
+.group_portrait_table tr td:nth-child(1) {
+	background-color: #F3F3F3;
+	border-right: 1px solid #C5D0DE;
+	border-bottom: 1px solid #C5D0DE;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.group_portrait_table tr td:nth-child(2) {
+	padding: 5px 20px;
+}
+
+.group_portrait_table tr:hover td:nth-child(2) {
+	background-color: #F8FAFE;
+}
+
+.group_portrait_page .part2 {
+	height: 48px;
+	text-align: center;
+	font-size: 18px;
+	color: #3D4D65;
+	line-height: 48px;
+	box-shadow: 0 2px 3px 0 rgba(102, 102, 255, 0.5);
+	margin-top: 15px;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.header_item1 {
+	padding: 10px;
+	padding-left: 30px;
+	color: #3D4D65;
+	font-size: 18px;
+	background-color: #fff;
+	border-bottom: 1px solid #C5D0DE;
+}
+
+.group_portrait_page .chart_box {
+	background-color: #fff;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+.group_portrait_page .chart_item {
+	height: 330px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #C5D0DE;
+	margin-right: 1%;
+	border-radius: 2px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.group_portrait_page .chart_item.third{
+	width: 32.2%
+}
+
+.group_portrait_page .chart_item.third:nth-child(3n) {
+	margin-right: 0;
+}
+
+.group_portrait_page .chart_item.half{
+	width: 49%
+}
+
+.group_portrait_page .chart_item.half:nth-child(2n) {
+	margin-right: 0;
+}
+
+
+.group_portrait_page .chart_item .title {
+	height: 35px;
+	border-bottom: 1px solid #C5D0DE;
+	line-height: 34px;
+	padding-left: 30px;
+	color: #3D4D65;
+	font-size: 15px;
+}
+
+.group_portrait_page .chart_item .content {
+	position: relative;
+	height: calc(100% - 35px);
+	height: -webkit-calc(100% - 35px);
+	height: -moz-calc(100% - 35px);
+	height: -ms-calc(100% - 35px);
+	height: -o-calc(100% - 35px);
 }
