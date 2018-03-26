@@ -133,6 +133,7 @@
 						<div class='tab_item transition_3'>
 							<p>未开通客户</p>
 						</div>
+						<button class='common_btn' style='height: 28px;font-size: 14px;float: right;margin-right: 15px;position: relative;padding-right: 35px'>自选标签<i class='iconfont icon-xiangyoujiantou' style='font-size: 30px;position: absolute;top: -5px;right: 7px;'></i></button>
 					</div>
 					<div class='part1' style='margin-top: -30px;background-color: #fff;position: relative;z-index: 2;'>
 						<table class='group_portrait_table'>
@@ -293,6 +294,11 @@
 	<script type="text/javascript" src='../../js/lib/jquery/jquery-3.2.1.min.js'></script>
 	<script src="../../js/plugin/echarts/echarts.min.js"></script>
 	<script>
+	$('.group_portrait_table').on('click', 'tr .select_item', function() {
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+	});
+
 	// 地域分布
 	var areaChart = echarts.init(document.getElementById('areaChart'));
 
@@ -304,53 +310,114 @@
 		legend: {
 			x: 'center',
 			y: 'bottom',
-			data: ['rose1', 'rose2', 'rose3', 'rose4', 'rose5', 'rose6', 'rose7', 'rose8']
-		},
-		toolbox: {
-			show: true,
-			feature: {
-				mark: { show: true },
-				dataView: { show: true, readOnly: false },
-				magicType: {
-					show: true,
-					type: ['pie', 'funnel']
-				},
-				restore: { show: true },
-				saveAsImage: { show: true }
-			}
+			itemWidth: 8,
+			itemHeight: 8,
+			borderRadius: 4,
+			textStyle: {
+				fontSize: 12
+			},
+			data: ['广东省1', '广东省2', '广东省3', '广东省4', '广东省5', '广东省6', '广东省7', '广东省8', '广东省9', '广东省10', '广东省11']
 		},
 		calculable: true,
 		series: [{
-			name: '半径模式',
+			name: '地域分布',
 			type: 'pie',
 			radius: [20, 110],
-			center: ['50%', '40%'],
+			center: ['50%', '50%'],
 			roseType: 'radius',
 			label: {
 				normal: {
 					show: false
-				},
-				emphasis: {
-					show: true
 				}
 			},
-			lableLine: {
-				normal: {
-					show: false
+			data: [{
+					value: 10,
+					name: '广东省1',
+
+					itemStyle: {
+						color: '#FFF060'
+					}
 				},
-				emphasis: {
-					show: true
+				{
+					value: 15,
+					name: '广东省2',
+
+					itemStyle: {
+						color: '#6FE621'
+					}
+				},
+				{
+					value: 17,
+					name: '广东省3',
+
+					itemStyle: {
+						color: '#4FCCFF'
+					}
+				},
+				{
+					value: 19,
+					name: '广东省4',
+
+					itemStyle: {
+						color: '#4D7BF3'
+					}
+				},
+				{
+					value: 20,
+					name: '广东省5',
+
+					itemStyle: {
+						color: '#1F4B9B'
+					}
+				},
+				{
+					value: 25,
+					name: '广东省6',
+
+					itemStyle: {
+						color: '#9F59CC'
+					}
+				},
+				{
+					value: 30,
+					name: '广东省7',
+
+					itemStyle: {
+						color: '#223CA8'
+					}
+				},
+				{
+					value: 40,
+					name: '广东省8',
+
+					itemStyle: {
+						color: '#902F88'
+					}
+				},
+				{
+					value: 50,
+					name: '广东省9',
+
+					itemStyle: {
+						color: '#2DC6DE'
+					}
+				},
+				{
+					value: 60,
+					name: '广东省10',
+
+					itemStyle: {
+						color: '#F95D91'
+					}
+				},
+				{
+					value: 70,
+					name: '广东省11',
+
+					itemStyle: {
+						color: '#FFC760'
+					}
 				}
-			},
-			data: [
-				{ value: 10, name: 'rose1' },
-				{ value: 5, name: 'rose2' },
-				{ value: 15, name: 'rose3' },
-				{ value: 25, name: 'rose4' },
-				{ value: 20, name: 'rose5' },
-				{ value: 35, name: 'rose6' },
-				{ value: 30, name: 'rose7' },
-				{ value: 40, name: 'rose8' }
 			]
 		}]
 	};
@@ -358,55 +425,92 @@
 	areaChart.setOption(option1);
 
 	// 环形图标
+	total = 1548 + 535;
+	var dataCircle = [{
+		value: 1548,
+		name: '男',
+		itemStyle: {
+			color: '#FC6A83'
+		},
+		label: {
+			show: false
+		}
+	}, {
+		value: 535,
+		name: '女',
+		itemStyle: {
+			color: '#2795F2'
+		},
+		label: {
+			formatter: parseInt((535 / total) * 100) + '%'
+		}
+	}, {
+		value: 505,
+		name: '未知',
+		itemStyle: {
+			color: '#5F39BA'
+		},
+		label: {
+			formatter: parseInt((505 / total) * 100) + '%'
+		}
+	}];
 	$('.circle_chart').each(function() {
 		var circleChart = echarts.init(this);
 
 		option = {
+			title: {
+				text: '性别',
+				subtext: 'SEX',
+				x: 'center',
+				y: '39%',
+				textStyle: {
+					fontSize: 35,
+					fontWeight: 'normal'
+				},
+				subtextStyle: {
+					fontSize: 12,
+					lineHeight: 0
+				}
+			},
 			tooltip: {
 				trigger: 'item',
 				formatter: "{a} <br/>{b}: {c} ({d}%)"
 			},
 			legend: {
 				orient: 'vertical',
-				x: 'left',
-				data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+				top: 'middle',
+				right: 20,
+				itemWidth: 8,
+				itemHeight: 8,
+				borderRadius: 4,
+				textStyle: {
+					fontSize: 14
+				},
+				data: ['男', '女', '未知']
 			},
 			series: [{
-				name: '访问来源',
+				name: '性别',
 				type: 'pie',
 				radius: ['50%', '70%'],
 				avoidLabelOverlap: false,
 				label: {
 					normal: {
-						show: false,
-						position: 'center'
+						show: false
 					},
-					emphasis: {
-						show: true,
-						textStyle: {
-							fontSize: '30',
-							fontWeight: 'bold'
-						}
-					}
 				},
 				labelLine: {
 					normal: {
 						show: false
 					}
 				},
-				data: [
-					{ value: 335, name: '直接访问' },
-					{ value: 310, name: '邮件营销' },
-					{ value: 234, name: '联盟广告' },
-					{ value: 135, name: '视频广告' },
-					{ value: 1548, name: '搜索引擎' }
-				]
+				data: dataCircle
 			}]
 		};
 		circleChart.setOption(option);
 	});
 
 	// 柱状图
+	var column_total = 10 + 52 + 200 + 334 + 390 + 330 + 220;
 	$('.column_chart').each(function() {
 		var columnChart = echarts.init(this);
 		option = {
@@ -425,19 +529,23 @@
 			},
 			xAxis: [{
 				type: 'category',
-				data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+				data: ['0-17岁', '18-24岁', '25-29岁', '30-34岁', '35-39岁', '40岁以上'],
 				axisTick: {
 					alignWithLabel: true
 				}
 			}],
 			yAxis: [{
-				type: 'value'
+				axisLabel: {
+					formatter: function(value, index) {
+						return parseInt((value / total) * 100) + '%';
+					}
+				}
 			}],
 			series: [{
 				name: '直接访问',
 				type: 'bar',
 				barWidth: '60%',
-				data: [10, 52, 200, 334, 390, 330, 220]
+				data: [10, 52, 200, 334, 390, 500]
 			}]
 		};
 		columnChart.setOption(option);
@@ -445,6 +553,53 @@
 	});
 
 	// 饼图
+	total = 1548 + 535 + 510 + 634 + 735;
+	var data = [{
+		value: 1548,
+		name: '新人',
+		itemStyle: {
+			color: '#36ACF6'
+		},
+		label: {
+			formatter: parseInt((1548 / total) * 100) + '%'
+		}
+	}, {
+		value: 535,
+		name: 'v1',
+		itemStyle: {
+			color: '#874DC5'
+		},
+		label: {
+			formatter: parseInt((535 / total) * 100) + '%'
+		}
+	}, {
+		value: 510,
+		name: 'v2',
+		itemStyle: {
+			color: '#F77E28'
+		},
+		label: {
+			formatter: parseInt((510 / total) * 100) + '%'
+		}
+	}, {
+		value: 634,
+		name: 'v3',
+		itemStyle: {
+			color: '#FC6B81'
+		},
+		label: {
+			formatter: parseInt((634 / total) * 100) + '%'
+		}
+	}, {
+		value: 735,
+		name: 'v4',
+		itemStyle: {
+			color: '#68E298'
+		},
+		label: {
+			formatter: parseInt((735 / total) * 100) + '%'
+		}
+	}];
 	$('.pie_chart').each(function() {
 		var pieChart = echarts.init(this);
 		option = {
@@ -455,14 +610,14 @@
 			legend: {
 				orient: 'vertical',
 				top: 'middle',
-				right: 20,
+				right: 80,
 				itemWidth: 8,
 				itemHeight: 8,
 				borderRadius: 4,
 				textStyle: {
 					fontSize: 14
 				},
-				data: ['西凉', '益州', '兖州', '荆州', '幽州']
+				data: ['新人', 'v1', 'v2', 'v3', 'v4']
 			},
 			series: [{
 				type: 'pie',
@@ -470,22 +625,32 @@
 				center: ['35%', '50%'],
 				selectedMode: 'single',
 				label: 'inside',
-				data: [{
-						value: 1548,
-						name: '幽州'
+				data: data,
+				label: {
+					normal: {
+						textStyle: {
+							color: 'rgba(255, 255, 255, 0.8)'
+						}
 					},
-					{ value: 535, name: '荆州' },
-					{ value: 510, name: '兖州' },
-					{ value: 634, name: '益州' },
-					{ value: 735, name: '西凉' }
-				],
+					formatter: '{b}: {d}',
+				},
 				itemStyle: {
 					emphasis: {
 						shadowBlur: 10,
 						shadowOffsetX: 0,
 						shadowColor: 'rgba(0, 0, 0, 0.5)'
 					}
-				}
+				},
+				labelLine: {
+					normal: {
+						lineStyle: {
+							color: 'rgba(255, 255, 255, 0.3)'
+						},
+						smooth: 0.5,
+						length: -40,
+						length2: 0
+					}
+				},
 			}]
 		};
 
