@@ -1,15 +1,47 @@
-var data = [
-    { name: '海门', value: 200 },
-    { name: '鄂尔多斯', value: 200 },
-    { name: '招远', value: 200 },
-    { name: '舟山', value: 200 },
-    { name: '齐齐哈尔', value: 200 },
-    { name: '盐城', value: 200 },
-    { name: '赤峰', value: 200 },
-    { name: '青岛', value: 200 },
-    { name: '乳山', value: 200 },
-    { name: '金昌', value: 200 },
-    { name: '泉州', value: 200 }
+var data = [{
+        name: '海门',
+        value: 200
+    },
+    {
+        name: '鄂尔多斯',
+        value: 200
+    },
+    {
+        name: '招远',
+        value: 200
+    },
+    {
+        name: '舟山',
+        value: 200
+    },
+    {
+        name: '齐齐哈尔',
+        value: 200
+    },
+    {
+        name: '盐城',
+        value: 200
+    },
+    {
+        name: '赤峰',
+        value: 200
+    },
+    {
+        name: '青岛',
+        value: 200
+    },
+    {
+        name: '乳山',
+        value: 200
+    },
+    {
+        name: '金昌',
+        value: 200
+    },
+    {
+        name: '泉州',
+        value: 200
+    }
 ];
 var geoCoordMap = {
     '海门': [121.15, 31.89],
@@ -204,7 +236,7 @@ var geoCoordMap = {
     '大庆': [125.03, 46.58]
 };
 
-var convertData = function(data) {
+var convertData = function (data) {
     var res = [];
     for (var i = 0; i < data.length; i++) {
         var geoCoord = geoCoordMap[data[i].name];
@@ -254,7 +286,7 @@ option = {
             type: 'scatter',
             coordinateSystem: 'geo',
             data: convertData(data.slice(6)),
-            symbolSize: function(val) {
+            symbolSize: function (val) {
                 return val[2] / 10;
             },
             label: {
@@ -279,10 +311,10 @@ option = {
         {
             type: 'effectScatter',
             coordinateSystem: 'geo',
-            data: convertData(data.sort(function(a, b) {
+            data: convertData(data.sort(function (a, b) {
                 return b.value - a.value;
             }).slice(0, 6)),
-            symbolSize: function(val) {
+            symbolSize: function (val) {
                 return val[2] / 10;
             },
             showEffectOn: 'render',

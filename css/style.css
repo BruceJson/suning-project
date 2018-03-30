@@ -606,6 +606,7 @@
 
 
 
+
 /*fullcalendar */
 
 #calendar {
@@ -1179,7 +1180,7 @@
 	vertical-align: middle;
 }
 
-.group_portrait_page .chart_item.third{
+.group_portrait_page .chart_item.third {
 	width: 32.2%
 }
 
@@ -1187,7 +1188,7 @@
 	margin-right: 0;
 }
 
-.group_portrait_page .chart_item.half{
+.group_portrait_page .chart_item.half {
 	width: 49%
 }
 
@@ -1212,4 +1213,15 @@
 	height: -moz-calc(100% - 35px);
 	height: -ms-calc(100% - 35px);
 	height: -o-calc(100% - 35px);
+}
+
+.weapon_page .part1 {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 45px;
+	border-bottom: 1px solid #8C97B2;
+	line-height: 43px;
+	padding-left: 40px;
+	z-index: 5;
 }
