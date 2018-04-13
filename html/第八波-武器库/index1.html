@@ -25,13 +25,25 @@
 
 	.animation_box>.bg>div {
 		position: absolute;
-		top: -28% !important;
+		top: -18% !important;
 		left: 50% !important;
 		transform: translateX(-50%) !important;
 	}
 
 	.animation_box>.bg>div .HYPE_scene {
 		background-color: transparent !important;
+	}
+
+	@media screen and (max-height: 800px) {
+		.animation_box>.bg>div {
+			top: -35% !important;
+		}
+	}
+
+	@media screen and (max-height: 1000px) {
+		.animation_box>.bg>div {
+			top: -28% !important;
+		}
 	}
 	/*学习*/
 
@@ -41,7 +53,7 @@
 
 	.animation_box>.learn>div {
 		position: absolute;
-		top: -30% !important;
+		top: -20% !important;
 		left: 49% !important;
 		transform: translateX(-50%) !important;
 		background-color: transparent !important;
@@ -51,6 +63,18 @@
 	.animation_box>.learn>div .HYPE_scene {
 		background-color: transparent !important;
 	}
+
+	@media screen and (max-height: 800px) {
+		.animation_box>.learn>div {
+			top: -45% !important;
+		}
+	}
+
+	@media screen and (max-height: 1000px) {
+		.animation_box>.learn>div {
+			top: -30% !important;
+		}
+	}
 	/*升级成功*/
 
 	.animation_box>.levelup {
@@ -59,7 +83,7 @@
 
 	.animation_box>.levelup>div {
 		position: absolute;
-		top: -30% !important;
+		top: -20% !important;
 		left: 49% !important;
 		transform: translateX(-50%) !important;
 		background-color: transparent !important;
@@ -69,6 +93,19 @@
 	.animation_box>.levelup>div .HYPE_scene {
 		background-color: transparent !important;
 	}
+
+
+	@media screen and (max-height: 800px) {
+		.animation_box>.levelup>div {
+			top: -45% !important;
+		}
+	}
+
+	@media screen and (max-height: 1000px) {
+		.animation_box>.levelup>div {
+			top: -30% !important;
+		}
+	}
 	/*升级成功*/
 
 	.animation_box>.price {
@@ -77,8 +114,8 @@
 
 	.animation_box>.price>div {
 		position: absolute;
-		top: -32% !important;
-		left: 52.5% !important;
+		top: -25% !important;
+		left: 52% !important;
 		transform: translateX(-50%) !important;
 		background-color: transparent !important;
 		margin: 0 !important;
@@ -86,6 +123,18 @@
 
 	.animation_box>.price>div .HYPE_scene {
 		background-color: transparent !important;
+	}
+
+	@media screen and (max-height: 800px) {
+		.animation_box>.price>div {
+			top: -45% !important;
+		}
+	}
+
+	@media screen and (max-height: 1000px) {
+		.animation_box>.price>div {
+			top: -32% !important;
+		}
 	}
 	</style>
 </head>
@@ -317,13 +366,7 @@ $('#pagination-container').pagination({
 })
 
 var str = '<div id="奖杯发光_hype_container" style="margin:auto;position:relative;width:1440px;height:1024px;overflow:hidden;" aria-live="polite"></div>';
-setTimeout(function () { <<
-	<< << < HEAD
-		===
-		=== =
-
-		>>>
-		>>> > 46 c8c4d003dfd8fa80cfc73d8478d1e1445a2d61
+setTimeout(function () {
 	var $div = $(str);
 	var script = document.createElement('script');
 	script.src = '%E5%A5%96%E6%9D%AF%E5%8F%91%E5%85%89.hyperesources/%E5%A5%96%E6%9D%AF%E5%8F%91%E5%85%89_hype_generated_script.js?39942';

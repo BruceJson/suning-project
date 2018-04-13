@@ -271,7 +271,7 @@ option = {
                 show: false
             }
         },
-        roam: true,
+        roam: false,
         itemStyle: {
             normal: {
                 areaColor: '#1B2A7D',

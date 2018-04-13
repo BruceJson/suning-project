@@ -26,13 +26,25 @@
 
     .animation_box>.bg>div {
         position: absolute;
-        top: -28% !important;
+        top: -18% !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
 
     .animation_box>.bg>div .HYPE_scene {
         background-color: transparent !important;
+    }
+
+    @media screen and (max-height: 800px) {
+        .animation_box>.bg>div {
+            top: -35% !important;
+        }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .animation_box>.bg>div {
+            top: -28% !important;
+        }
     }
     /*学习*/
 
@@ -42,7 +54,7 @@
 
     .animation_box>.learn>div {
         position: absolute;
-        top: -30% !important;
+        top: -20% !important;
         left: 49% !important;
         transform: translateX(-50%) !important;
         background-color: transparent !important;
@@ -51,6 +63,18 @@
 
     .animation_box>.learn>div .HYPE_scene {
         background-color: transparent !important;
+    }
+
+    @media screen and (max-height: 800px) {
+        .animation_box>.learn>div {
+            top: -45% !important;
+        }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .animation_box>.learn>div {
+            top: -30% !important;
+        }
     }
     /*升级成功*/
 
