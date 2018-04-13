@@ -84,7 +84,7 @@
 
     .animation_box>.levelup>div {
         position: absolute;
-        top: -30% !important;
+        top: -20% !important;
         left: 49% !important;
         transform: translateX(-50%) !important;
         background-color: transparent !important;
@@ -94,6 +94,19 @@
     .animation_box>.levelup>div .HYPE_scene {
         background-color: transparent !important;
     }
+
+
+    @media screen and (max-height: 800px) {
+        .animation_box>.levelup>div {
+            top: -45% !important;
+        }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .animation_box>.levelup>div {
+            top: -30% !important;
+        }
+    }
     /*升级成功*/
 
     .animation_box>.price {
@@ -102,8 +115,8 @@
 
     .animation_box>.price>div {
         position: absolute;
-        top: -32% !important;
-        left: 54% !important;
+        top: -25% !important;
+        left: 52% !important;
         transform: translateX(-50%) !important;
         background-color: transparent !important;
         margin: 0 !important;
@@ -111,6 +124,18 @@
 
     .animation_box>.price>div .HYPE_scene {
         background-color: transparent !important;
+    }
+
+    @media screen and (max-height: 800px) {
+        .animation_box>.price>div {
+            top: -45% !important;
+        }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .animation_box>.price>div {
+            top: -32% !important;
+        }
     }
     </style>
 </head>
